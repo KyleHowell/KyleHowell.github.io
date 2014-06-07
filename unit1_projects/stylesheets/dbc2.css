@@ -1,0 +1,69 @@
+html, body {
+    margin: 0;
+    font: 100% "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #000;
+    background: #fc6;
+}
+#container {
+    margin: 20px auto;
+    background: #0f0;
+}
+h1 {
+    line-height: 75px;
+    margin: 0;
+    border: 5px solid gray;
+    text-align: center;
+    background: #ff6600
+}
+#left {
+    width: 360px;
+    border: 5px solid gray;
+    padding: 20px;
+    text-align: center;
+    float: left;
+}
+#right {
+    padding: 20px;
+    border: 5px solid gray;
+    overflow: auto;
+    text-align: center;
+    background: #ccc;
+}
+footer {
+    border: 5px solid gray;
+    color: #ccc;
+    background: #330000;
+}
+h2, footer p {
+    line-height: 45px;
+    margin: 50;
+    text-align: center;
+}
+
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    border: 5px solid gray;
+    color: purple;
+}
+
+.image { 
+   position: relative; 
+   width: 100%;
+}
+
+h3 { 
+   position: absolute; 
+   top: 250px; 
+   left: 0; 
+   width: 100%; 
+   text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
