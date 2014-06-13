@@ -26,6 +26,13 @@ background-color: rgba(54, 25, 25, .5);
 opacity: 0.7;
 }
 
+h3{
+color: white;
+text-align: center;
+background-color: rgba(54, 25, 25, .5);
+opacity: 0.7;
+}
+
 /* unvisited link */
 a:link {
 color: rgba(117, 222, 222, .8);
