@@ -1,0 +1,1395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Ticketmaster</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8"><script src="Ticketmaster_files/satelliteLib-34ef875a9b625fc2497227e265ff081e9c879b72.js"></script><script src="Ticketmaster_files/ga.js"></script><script>var AccountManager = {Tracking:{satellite:{pagename:"US: 49ersnew: invoicing_confirm",team:"49ersnew",clusterid:"US",customer_id:"9886008",recognized_state:"Recognized"}}};</script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="Ticketmaster_files/default_style_r.css" type="text/css">
+<style type="text/css">
+        body { background-color: #999999; }
+        .clientTitle,
+        .mainTeamColor { color: #B8093E; }
+
+        .logoLid,
+        .logoLidText,
+        .logoLidText span { padding: 12px 0px 0px 12px; color: #FFFFFF; }
+
+        .lid-primary,
+        .invoiceLid,
+        .lid-expand-closed,
+        .lid-expand-open,
+        .button,
+        .mainTeamColorBg { background-color: #B8093E; }
+        .teamBorder5Box { border: 5px solid  #B8093E; }
+
+        a,
+        a:link,
+        a:visited,
+        td.evtCalBoxEvt a,
+        td.evtCalBoxEvt a:link,
+        td.evtCalBoxMge a,
+        td.evtCalBoxMge a:link { color: #B8093E; }
+
+        .lid-secondary,
+        .altTeamBg,
+        .teamCalColor,
+        .altTeamColor { background-color: #AF925D; }
+
+        .lid-secondaryText { color: #FFFFFF; }
+
+        .lidText,
+        .invoiceLid,
+        a.invoiceLidLink:link,
+        a.invoiceLidLink:visited,
+        a.invoiceLidLink { color: #FFFFFF !important; }
+        </style>	<meta name="DCS.dcsuri" content="Confirmation">
+	<meta name="WT.ti" content="Confirmation">
+	<meta name="WT.cg_n" content="Invoices">
+	<meta name="DCSext.lang" content="EN">
+	<meta name="DCSext.mkt" content="US">
+	<meta name="DCSext.team" content="49ersnew">
+	<meta name="DCSext.payment_method" content="CC">
+	<meta name="DCSext.credit_applied" content="none">
+	<script language="JavaScript" type="text/javascript" src="Ticketmaster_files/prototype.js"></script>
+	<script language="JavaScript" type="text/javascript" src="Ticketmaster_files/scriptaculous.js"></script><script type="text/javascript" src="Ticketmaster_files/builder.js"></script><script type="text/javascript" src="Ticketmaster_files/effects.js"></script>
+
+<script language="JavaScript" type="text/javascript">
+
+var base_url = '/';
+
+
+
+
+function bodymove(event){
+    if (click){
+        var mousetop2 = event.clientY;
+        var mouseleft2 = event.clientX;
+        var difftop = mousetop2 - mousetop1;
+        var diffleft = mouseleft2 - mouseleft1;
+        var pop = document.getElementById(popupID);
+        poptop = pop.style.top.split('p');
+        popleft = pop.style.left.split('p');
+        poptop = (poptop[0] * 1);
+        popleft = (popleft[0] * 1);
+        pop.style.top = (poptop+difftop)+'px';
+        pop.style.left = (popleft+diffleft)+'px';
+        mousetop1 = mousetop2;
+        mouseleft1 = mouseleft2;
+    }
+}
+function newVenueWin2(venueWin,x,y) {
+	var VenueWindow2;
+	VenueWindow2 = window.open(venueWin,'venueInfo','toolbar=0,location=0,directories=0,status=no,menubar=0,scrollbars=yes,resizable=yes,width='+x+',height='+y);
+	VenueWindow2.focus();
+}
+
+var popupContainer;
+
+function openPopup(target, width, height, top, left)
+{
+	var properties = "status=no,location=no,toolbar=no,directories=no,resizable=yes,width=" +width+ ",height=" +height+", top=" +top+ ", left=" +left;
+	popupContainer = window.open(target, "popup", properties);
+}
+
+function openPopupWithID(target, width, height, top, left, id)
+{
+	var properties = "status=no,location=no,toolbar=no,directories=no,resizable=yes,scrollbars=yes,width=" +width+ ",height=" +height+", top=" +top+ ", left=" +left;
+	popupContainer = window.open(target, id, properties);
+}
+
+var down_arrow = new Image(688,27);
+down_arrow.src="/images/down_arrow.png";
+</script>
+<!-- PNG HACK FOR IE 6 -->
+<!--[if IE 6]>
+<style type="text/css">
+.lid-primary { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=image, src='/images/secBallon_719.png'); }
+.lid-secondary { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='/images/secBallon_232.png'); }
+.lid-expand-closed { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=image, src='/images/right_arrow.png'); }
+.lid-expand-open { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=image, src='/images/down_arrow.png'); }
+
+.opacity90 { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='images/opacity90.png'); }
+.striped-lid { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='images/striped-lid.png'); }
+
+</style>
+<![endif]-->
+<script src="Ticketmaster_files/s-code-contents-8bc8642f873a8f59990742816384a96fadaad35e.js"></script></head>
+<body><style type="text/css">
+/*Light Box CSS */
+#bg_fade {
+    background-color:#555555;
+    height:140%;
+    left:0px;
+    margin:0px;
+    padding:0px;
+    position:absolute;
+    top:0px;
+    visibility:hidden;
+    width:100%;
+    z-index:1000;
+}
+
+#containerDiv {
+    position: absolute;
+    width: 30%;
+    z-index: 99999;
+    display: none;
+    width: 558px;
+}
+
+#containerDiv .wrapper {
+    position: relative;
+    height: 10%;
+    padding: 10px;
+    text-align: left;
+    border: 0px blue solid;
+    background-color: white;
+    z-index: 99999;
+    color: #414141;
+    font-size: 12px;
+}
+#popupshadowmiddle {
+    background: url("../images/popup_shadow_middle.png") repeat-y scroll left top
+transparent;
+    left: 0;
+    margin: 29px 0;
+    position: absolute;
+    top: 0;
+    width: 578px;
+}
+#popupshadowtop {
+    background: url("../images/popup_shadow_top.png") no-repeat scroll left top transparent;
+    height: 29px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 578px;
+}
+#popupshadowbottom {
+    background: url("../images/popup_shadow_bottom.png") no-repeat scroll left top
+transparent;
+    bottom: 0;
+    height: 29px;
+    left: 0;
+    position: absolute;
+    width: 578px;
+}
+#popupshadow {
+    position: absolute;
+    width: 578px;
+}
+.text14px {
+    font-size: 14px !important;
+}
+.padV10 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.padL5 {
+    padding-left: 5px;
+}
+.padV5 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.padV10 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.padH20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.browserTable {
+    margin: 0 auto;
+    text-align: left;
+}
+.browserTable td {
+    padding: 0px 3px 8px 2px;
+    color: #414141;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+}
+.popupClose {
+    color: #C0C0C0;
+    font-size: 11px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+.popupClose img {
+    padding-bottom: 2px;
+    vertical-align: middle;
+}
+a.buttonalt2, a.buttonalt2:link {
+    background-image: url("../images/buttonbg.gif");
+    border-left: 2px solid #EAEAEA;
+    border-right: 2px solid #EAEAEA;
+    height: 19px;
+    border: 1px solid #E8E8E8;
+    color: #FFFFFF !important;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+#continueLink {
+    font-size: 12px;
+}
+</style>
+
+
+<!-- Lightbox Container-->
+<div id="containerDiv">
+
+<div id="popupshadow" style="height: 286px;">
+<div id="popupshadowtop"></div>
+<div id="popupshadowmiddle" style="height: 228px;"></div>
+<div id="popupshadowbottom"></div>
+</div>
+<div class="wrapper">
+        <div class="popupClose">close <a id="closeLink" href="javascript:void(0);"><img src="Ticketmaster_files/close2.gif" alt="Close" border="0"></a></div>
+<div class="bld text14px padL5 padV5">Your browser isn't compatible with this site.</div>
+<div class="padL5 padR15 padV10">To use all features of Levi's Stadium [AccountManager Site Name], please download one of these supported browsers:</div>
+<div class="padH20 padV5 text-center">
+        <table class="browserTable" border="0" cellpadding="0" cellspacing="0" width="400">
+                <tbody><tr>
+                        <td class="padR10"><img src="Ticketmaster_files/firefox.jpg" alt="Firefox" border="0"></td>
+                        <td>Firefox 3.5 and above<br>(Win XP, Vista, 7 and Mac OS X)</td>
+                        <td width="35%"><a id="ff-download-button" class="buttonalt2 inline no-link" href="http://www.mozilla.com/en-US/firefox/fx/">download now</a></td>
+                </tr>
+                <tr>
+                        <td class="padR10"><img src="Ticketmaster_files/ie.jpg" alt="Internet Explorer" border="0"></td>
+                        <td>Internet Explorer 8<br>(Win XP, Vista and 7)</td>
+                        <td><a id="ie-download-button" class="buttonalt2 inline no-link" href="http://www.microsoft.com/en-us/download/internet-explorer-9-details.aspx">download now</a></td>
+                </tr>
+                <tr>
+                        <td class="padR10"><img src="Ticketmaster_files/chrome.jpg" alt="Chrome" border="0"></td>
+                        <td>Google Chrome</td>
+                        <td><a id="ie-download-button" class="buttonalt2 inline no-link" href="https://www.google.com/intl/en/chrome/browser/">download now</a></td>
+                </tr>
+        </tbody></table>
+</div>
+<div class="padL5 padR15 padBm15">
+Or you can <a href="javascript:void(0);" id="continueLink">continue with your current browser</a>, but some features of the site may not work properly.</div>
+
+</div>
+</div>
+<script type="text/javascript" src="Ticketmaster_files/lightbox.js"></script>
+<script type="text/javascript" src="Ticketmaster_files/lightbox_load.js"></script>
+<script>
+        var browser_notification;
+        Event.observe(window, 'load', function () {
+              if(detectBrowserVersion()){
+                    browser_notification = new Lightbox('containerDiv');
+                    browser_notification.open();
+               }
+        });
+
+
+        Event.observe('closeLink', 'click', function () {
+                setCookie('browser_update','no',10);
+                browser_notification.close();
+        });
+        Event.observe('continueLink', 'click', function () {
+                setCookie('browser_update','no',10);
+                browser_notification.close();
+        });
+
+
+</script>
+<style type="text/css">
+div.overlay {
+    position:absolute;
+	z-index:9998;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+	display:none;
+    background-color:gray;
+    opacity: .7;
+}
+
+div.pop {
+	position:absolute;
+	width:770px;
+	/*height:150px;*/
+	z-index:9999;
+	display:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+    background-color: transparent;
+}
+
+div.pop2 {
+	position:absolute;
+	/*width:770px;*/
+	z-index:9999;
+	display:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+div.popBody {
+	background: #ededed url('/images/bg_popbody.gif') top left repeat-x;
+	border-left:1px solid #d2d2d2;
+	border-right:1px solid #d2d2d2;
+	border-bottom:1px solid #d2d2d2;
+	width:753px;
+	height:150px;
+	padding-top:5px;
+	padding-left:15px;
+}
+div.lid {
+	height:22px;
+	width:100%;
+}
+
+div.graylid {
+	background: #bbbbbb  url('/images/top_lid_gray.gif') top left repeat-x;
+	float:left;
+	height:22px;
+	width:756px;
+}
+
+.messageText {
+	color:#d66006;
+	font-weight:bold;
+	font-size:11px;
+
+}
+
+.popText {
+	float:left;
+	width:565px;
+    height:100px;
+	padding-left:15px;
+    overflow-y:auto;
+    color:#000000;
+}
+
+.popText p {
+	margin-top: 0em;
+	margin-bottom: 0.8em;
+}
+
+input.tmBtn {
+	color: #ffffff;
+	font-weight:bold;
+	background-color: #024474;
+	border-top: 2px solid #417DA8;
+	border-right: 2px solid #012A48;
+	border-bottom: 2px solid #012A48;
+	border-left: 2px solid #417DA8;
+	width:105px;
+	margin-right:10px;
+}
+</style>
+
+<div id="popupGreyOverlay" class="overlay"></div>
+<div style="top: 657.5px; left: 680px;" id="popupDiv" class="pop">
+
+    <div class="lid"><img src="Ticketmaster_files/tl_popcorner.gif" style="float:left" alt=""><div class="graylid"></div><img src="Ticketmaster_files/tr_popcorner.gif" style="float:right" alt="">
+        <div style="clear:both"></div>
+    </div>
+
+    <div class="popBody">
+        <div id="popupCloseImg"></div>
+        <div style="clear:both"></div>
+        <div style="width:106px; height:19px; float:left">
+            <img id="popupLogo" src="Ticketmaster_files/tm_logo_black.gif" style="float:left" alt="Ticketmaster">
+        </div>
+        <div class="popText">
+            <p class="messageText">
+                </p><div id="popupTextMessage"></div>
+            <p></p>
+        </div><!-- popText-->
+        <div class="clear:both"></div>
+        <div id="popupButtonsDiv" style="width:700px; text-align:center"><input class="tmBtn" value="OK" id="popup_button_0" name="popup_button_0" onclick="divPopup.hide(0);" type="button"></div>
+    </div>
+</div>
+<script language="JavaScript">
+
+// Create a single instanceof the popup
+var divPopup = new function ()
+{
+    this.resize = function ()
+    {
+        var myWidth = 0, myHeight = 0, myScrolledLeft = 0, myScrolledTop = 0;
+        // Calculate window frame dimensionss
+        if( typeof( window.innerWidth ) == 'number' )
+        {
+            //Non-IE
+            myWidth         = window.innerWidth;
+            myHeight        = window.innerHeight;
+            myScrolledLeft  = window.pageXOffset;
+            myScrolledTop   = window.pageYOffset;
+        } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) )
+        {
+            //IE 6+ in 'standards compliant mode'
+            myWidth         = document.documentElement.clientWidth;
+            myHeight        = document.documentElement.clientHeight;
+            myScrolledLeft  = document.documentElement.scrollLeft;
+            myScrolledTop   = document.documentElement.scrollTop;
+        } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) )
+        {
+            //IE 4 compatible
+            myWidth         = document.body.clientWidth;
+            myHeight        = document.body.clientHeight;
+            myScrolledLeft  = document.body.scrollLeft;
+            myScrolledTop   = document.body.scrollTop;
+        }
+
+        var popupW = document.getElementById('popupDiv');
+        popupW.style.top = ((myHeight/2) - popupW.offsetHeight/2) + myScrolledTop + 'px';
+        popupW.style.left = ((myWidth/2) - popupW.offsetWidth/2) + myScrolledLeft + 'px';
+    }
+
+    this.setMessage = function (message)
+    {
+        // set the message
+        this.message = message;
+        var messageW = document.getElementById('popupTextMessage');
+        messageW.innerHTML = this.message;
+    }
+
+    this.setButtons = function (buttonArray)
+    {
+        this.buttonArray = buttonArray;
+        var htmlText = '';
+        var htmlImg = '';
+
+        if (buttonArray.buttons == null)
+        {
+            for (var ii = 0; ii < buttonArray.length; ++ii)
+            {
+                htmlText +=  '<input class="tmBtn" value="' + buttonArray[ii] +'" type="button" id="popup_button_' + ii + '" name="popup_button_' + ii + '" onclick="' + this.id + '.hide(' + ii + ');"/>';
+            }
+        }
+        else
+        {
+            for (var ii = 0; ii < buttonArray.buttons.length; ++ii)
+            {
+                htmlText +=  '<input class="tmBtn" value="' + buttonArray.buttons[ii] +'" type="button" id="popup_button_' + ii + '" name="popup_button_' + ii + '" onclick="' + this.id + '.hide(' + ii + ');"/>';
+            }
+
+            if (buttonArray.cancel != null)
+            {
+                htmlImg = '<img src="/images/icn_closepop.gif" style="padding-right:15px;float:right; cursor:pointer" onclick="' + this.id + '.hide(' + buttonArray.cancel + ');" alt="Close Window" />';
+            }
+            else
+            {
+                htmlImg = '<div display="block" style="height:16px; width:16px; padding-right:15px;float:right" />';
+            }
+        }
+        var btnDivW = document.getElementById('popupButtonsDiv');
+        btnDivW.innerHTML = htmlText;
+
+        var imgDivW = document.getElementById('popupCloseImg');
+        imgDivW.innerHTML = htmlImg;
+    }
+
+    this.setOnClose = function (callback)
+    {
+        this.onClose = callback;
+    }
+
+    this.show = function ()
+    {
+        this.buttonClicked = null;
+
+        // grey ovelay
+        var overlayW = document.getElementById('popupGreyOverlay');
+        //if (window.innerHeight && window.scrollMaxY)
+        if (typeof(window.innerHeight) == 'number' && typeof(window.scrollMaxY) == 'number')
+        { // Firefox
+            overlayW.style.height   = window.innerHeight + window.scrollMaxY + 'px';
+            overlayW.style.width    = window.innerWidth + window.scrollMaxX + 'px';
+        }
+        //else if (document.body.scrollHeight > document.body.offsetHeight)
+        else if (document.documentElement && document.documentElement.scrollHeight)
+        { // all but Explorer Mac
+            overlayW.style.height   = document.documentElement.scrollHeight + 'px';
+            overlayW.style.width    = document.documentElement.scrollWidth + 'px';
+            overlayW.style.filter   = 'alpha(opacity=70)';
+        } else
+        { // works in Explorer 6 Strict, Mozilla (not FF) and Safari
+            overlayW.style.height   = document.body.scrollHeight + 'px';
+            overlayW.style.width    = document.body.scrollWidth + 'px';
+            overlayW.style.filter   = 'alpha(opacity=70)';
+        }
+
+        overlayW.style.display = 'inline';
+        var popupW = document.getElementById('popupDiv');
+        popupW.style.display = 'inline';
+
+        this.resize();
+
+        // give focus to de default button...
+        if (this.buttonArray.focused != null)
+        {
+            var btnId = 'popup_button_' + this.buttonArray.focused;
+            var f = document.getElementById(btnId);
+            if (f != null)
+            {
+                f.focus();
+            }
+        }
+
+        this.checkTimer = setInterval(this.id + '.checkClick();', 500);
+    }
+
+    this.checkClick = function ()
+    {
+        if (this.buttonClicked != null)
+        {
+            clearInterval(this.checkTimer);
+            if (this.onClose != null)
+            {
+                this.onClose(this.buttonClicked);
+            }
+            this.buttonClicked = null;
+
+            // hide the popup
+            var overlayW = document.getElementById('popupGreyOverlay');
+            overlayW.style.display = 'none';
+            var popupW = document.getElementById('popupDiv');
+            popupW.style.display = 'none';
+
+        }
+    }
+
+    this.hide = function (buttonClicked)
+    {
+        this.buttonClicked = buttonClicked;
+    }
+
+    this.enableLogo = function (enabled)
+    {
+        var imgW = document.getElementById('popupLogo');
+        imgW.style.display = enabled ? 'inline' : 'none';
+    }
+
+    // constuctor defaults
+    this.id = 'divPopup';
+    this.message = '';
+    this.buttonArray = ['OK'];
+    this.onClose = null;
+    this.buttonClicked = null;
+
+    this.setMessage(this.message);
+    this.setButtons(this.buttonArray);
+
+    // will overwrite anything in onresize or onscroll
+    window.onresize = this.resize;
+    window.onscroll = this.resize;
+}
+// this is the global instance to use...
+</script>
+<div id="langBarBg"><div id="langBar" class="alt_fontface">&nbsp;</div></div><div id="mainWrapper"><div id="headerImage"><div style="text-align:center; width:1000px; margin-left:auto; margin-right:auto;">
+<img id="Image-Maps_3201305291639016" src="Ticketmaster_files/34812.jpg" usemap="#Image-Maps_3201305291639016" alt="" border="0" height="105" width="1000">
+<map id="_Image-Maps_3201305291639016" name="Image-Maps_3201305291639016">
+<area shape="poly" coords="17,46,45,46,75,46,107,47,20,62,47,62,77,62,109,63," href="http://www.newsantaclarastadium.com/images" alt="images" title="images">
+<area shape="poly" coords="141,44,161,44,185,44,209,44,231,44,233,57,214,58,189,58,168,58,145,58," href="http://www.newsantaclarastadium.com/tickets" alt="tickets" title="tickets">
+<area shape="poly" coords="270,45,295,45,324,45,354,45,366,55,344,58,313,58,285,58,269,55," href="http://www.newsantaclarastadium.com/headlines?type=stadium-blog" alt="news" title="news">
+<area shape="poly" coords="637,46,660,45,690,45,720,45,729,57,703,59,681,59,649,59,635,59," href="http://alivech.at/o5e9d" alt="live chat" title="live chat">
+<area shape="poly" coords="761,46,784,46,808,46,833,45,856,45,857,57,836,57,812,57,791,58,768,59," href="http://www.newsantaclarastadium.com/live-view" alt="live view" title="live view">
+<area shape="poly" coords="888,47,915,46,949,46,976,46,981,58,952,59,917,59,892,59," href="http://www.seats3d.com/nfl/49ers_new_stadium/" alt="3D" title="3D">
+<area shape="rect" coords="998,103,1000,105" href="http://www.image-maps.com/index.php?aff=mapped_users_3201305291639016" alt="Image Map" title="Image Map">
+</map>
+</div>
+</div><div id="contentWrapper">
+<div id="contentHeader">
+    <div class="tmSpot">
+                        <img class="mgnTop10" alt="" src="Ticketmaster_files/ticketmaster-logo-bw.jpg">
+                    </div>
+    <div class="clientTitle">
+        Levi's® Stadium Online    </div>
+
+</div>
+
+<div class="divider4px"></div>
+<div id="headerLinks" class="alt_fontface">
+    <a id="homepageLink" href="https://oss.ticketmaster.com/html/login.htmI?l=EN&amp;CNTX=&amp;tm_link=Confirmation_Home"><!--ID TU_AMHOMEPAGE_0109 EN-->home<!--/ID TU_AMHOMEPAGE_0109 EN--></a> | <a id="faq" href="https://oss.ticketmaster.com/aps/49ersnew/EN/faq/am/paying_invoice" target="_blank"><!--ID TU_AMHOMEPAGE_0089 EN-->faq<!--/ID TU_AMHOMEPAGE_0089 EN--></a> | <a id="contact" href="#" onclick="dcsMultiTrack('DCS.dcsuri', 'Confirmation_Contact_Us', 'WT.ti', 'Confirmation_Contact_Us', 'Module_Clicked', 'Confirmation_Contact_Us');openPopup('contactRep.htmI', 420, 270, 100, 200);">contact us</a>    <!--<a href="#">faq</a>
+    | <a href="#">view cart</a>
+    | <a href="#">contact us</a>-->
+    | <a id="home" href="https://oss.ticketmaster.com/html/home.htmI?team=49ersnew&amp;l=EN&amp;STAGE=1&amp;CNTX=&amp;out=1&amp;tm_link=Confirmation_Log_Out"><!--ID TU_AMHOMEPAGE_0088 EN-->log out<!--/ID TU_AMHOMEPAGE_0088 EN--></a>
+</div>
+            <div class="clear"></div>
+
+<div class="clear"></div><script language="JavaScript">
+function displayPlan(planID, mode, show)
+    {
+        if (show == 'show')
+        {
+            document.getElementById('linkPlan_'+ mode + planID).innerHTML = ' - <a href="javascript:void(0);" class="smLink" onClick="dcsMultiTrack(\'DCS.dcsuri\', \'Invoice_Confirm\', \'WT.ti\', \'Invoice_Confirm\', \'Module_Clicked\', \'Confirmation_Show_PlanDetails\');displayPlan(\'' + planID + '\', \'' + mode + '\',\'hide\');return false;">Hide Details</a>';
+            new Ajax.Request('/async_request.php',
+            {
+                    "method":'post',
+                    "parameters": {
+                        "async_proc": "INVOICE_CONFIRM"
+                        ,"l":"EN"
+                        ,"planID":planID
+                        ,"mode":mode
+                },
+                "onSuccess": function(transport)
+                {
+                    objJSON = transport.responseText.evalJSON(true) || "Please Refresh";
+                    if (objJSON.RC == 0)
+                    {
+                        document.getElementById('plan_'+ mode + planID).innerHTML = objJSON.text;
+                    }
+                },
+                "onFailure": function(transport)
+                {
+                    alert(transport.responseText);
+                }
+            });
+        }
+        else
+        {
+            document.getElementById('plan_'+ mode + planID).innerHTML = '';
+            document.getElementById('linkPlan_'+ mode + planID).innerHTML = ' + <a href="javascript:void(0);" class="smLink" onClick="dcsMultiTrack(\'DCS.dcsuri\', \'Invoice_Confirm\', \'WT.ti\', \'Invoice_Confirm\', \'Module_Clicked\', \'Confirmation_Hide_InvDetails\');displayPlan(\'' + planID + '\',\'' + mode + '\', \'show\');return false;">Show Details</a>';
+        }
+
+    }
+</script>
+<div id="leftCol">
+<script type="text/javascript">
+	var feesExpand = "closed";
+	function feesExpandFunc() {
+		if (feesExpand=="closed"){
+			document.getElementById('expandicon').src = "/images/expandMinus.gif";
+			document.getElementById('feetotal').style.display = "block";
+			feesExpand = "open";
+		} else {
+			document.getElementById('expandicon').src = "/images/expandPlus.gif";
+			document.getElementById('feetotal').style.display = "none";
+			feesExpand = "closed";
+		}
+		return false;
+	}
+</script>
+
+
+<!-- start of invoice summary module -->
+<div class="border5Box" id="invoice_summary">
+    <div class="lid-secondary">
+        <p class="lid-secondaryText">
+        Invoice Summary        </p>
+    </div>
+    <div class="divider1px"></div>
+    <div class="qkLinkSelected pad4">
+        <div class="logoLid">
+            <div class="floatLeft logoLidText">
+                <span class="text12px bld">
+                    49ers Season Ticket Invoice<br>
+                                    </span>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="divider1px"></div>
+    <div class="textWrapper padV5 noBorder">
+        
+                <table class="summary bdNoBtm" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody><tr>
+                        <td width="142"><strong>Renewal Invoice Value</strong></td>
+                        <td align="right" width="60">US&nbsp;$1904.00</td>
+                    </tr><tr>
+                        <td><strong>Amount Paid Today</strong></td>
+                        <td align="right">US&nbsp;$1904.00</td>
+                    </tr>
+                     <tr>
+                        <td class="text11px" colspan="2">US&nbsp;$1904.00 billed to VI x0791<br></td>
+                    </tr>
+                    <tr>
+                        <td class="padTop10"><strong>Outstanding Balance: </strong></td><td class="padTop10" align="right"><strong>US&nbsp;$0.00</strong></td>
+                    </tr></tbody></table>    </div>
+    <div class="divider1px"></div>
+    <div class="textWrapper floatRight noBorder">
+        <a href="#" id="lnkViewInvoiceDetail" onclick="dcsMultiTrack('DCS.dcsuri', 'Confirmation_View_InvDetails', 'WT.ti', 'Confirmation_View_InvDetails', 'Module_Clicked', 'Confirmation_View_InvDetails');openPopupWithID('https://oss.ticketmaster.com/html/invoicing_summary_popup.htmI?l=EN&amp;id=1059530&amp;CNTX=539b87aac1fad3-90221075&amp;tm_link=invoicing_summary',775,625, 100, 200, 'invoiceSummary');return false;" class="text14px"><strong>
+        View Invoice Details        </strong></a>
+    </div>
+    <div class="clear"></div>
+</div>
+<!-- end of invoice summary module -->
+
+<!-- start of customer address module -->
+    <div class="border5Box">
+        <div class="lid-secondary">
+          <p class="lid-secondaryText">
+          Address Information          </p>
+        </div>
+        <div class="textWrapper noBorder">
+            
+            <p>
+                Kyle Howell<br>
+                1117 Jamestown Drive<br>Sunnyvale, CA 94087
+            </p><br><p>Email:<br>mrhowell0@gmail.com</p><div class="divider1px mgnBm10"></div>
+                Please <a href="#" onclick="dcsMultiTrack('DCS.dcsuri', 'Confirmation_Contact_Us', 'WT.ti', 'Confirmation_Contact_Us', 'Module_Clicked', 'Confirmation_Contact_Us');openPopup('contactRep.htmI', 420, 270, 100, 200);" class="strong" id="lnkTeamRep">contact your account rep</a><br>
+                for updates.      </div>
+    </div>
+<!-- end of customer address module -->
+<div class="border5Box">
+            <div class="lid-secondary"><p class="lid-secondaryText">Quick Links</p></div>
+    <div class="text16px qkLink"><a class="bld" id="QLinks_home" href="https://oss.ticketmaster.com/html/login.htmI?l=EN&amp;CNTX=539b87aac1fad3-90221075&amp;tm_link=Confirmation_Home">home</a></div><div class="divider1px"></div><div class="text16px qkLink"><a class="bld" id="getStarted" href="https://oss.ticketmaster.com/html/request.htmI?l=EN&amp;PROC=SEATS_SOLD&amp;STAGE=1&amp;tm_link=Confirmation_Manage_Tickets">manage my tickets</a></div><div class="divider1px"></div><div class="text16px qkLink"><a class="bld" id="QLinks_accountSettings" href="https://oss.ticketmaster.com/html/setProfile.htmI?l=EN&amp;CNTX=539b87aac1fad3-90221075&amp;tm_link=Confirmation_Account_Settings">account settings</a></div><div class="divider1px"></div><div class="text16px qkLink"><a class="bld" id="QLinks_contactTeamRep" href="javascript:dcsMultiTrack('DCS.dcsuri',%20'Confirmation_Contact_TeamRep',%20'WT.ti',%20'Confirmation_Contact_TeamRep',%20'Module_Clicked',%20'Confirmation_Contact_TeamRep');openPopup('contactRep.htmI',%20420,%20270,%20100,%20200);">contact client rep</a></div><div class="divider1px"></div><div class="text16px qkLink"><a class="bld" id="QLinks_buyTickets" href="https://oss.ticketmaster.com/html/pack_home.htmI?l=?l=EN&amp;CNTX=539b87aac1fad3-90221075&amp;tm_link=Confirmation_Buy_Tickets">Levi's® Stadium Events</a></div><div class="divider1px"></div><div class="text16px qkLink"><a class="bld" id="QLinks_password" href="https://oss.ticketmaster.com/html/setPassword.htmI?l=EN&amp;CNTX=539b87aac1fad3-90221075&amp;tm_link=Confirmation_Change_Password">change password</a></div><div class="divider1px"></div></div>
+</div>
+<div id="rightCol">
+    <span style="font-size: 24px;font-family: arial;color:#4E4E4E;">My Invoice</span>
+    <div class="spacer5px"></div>
+    <ul class="steps">
+    	<li>1. Payment Plans</li>
+        <li>2. Billing</li>
+        <li class="altTeamBg">3. Confirmation</li>
+    </ul>
+
+    <div class="clear text-right padTop20 padBm10">
+    	<a href="javascript:window.print();" id="lnkPrint" onclick="dcsMultiTrack('DCS.dcsuri', 'Invoice_Confirm','WT.ti', 'Invoice_Confirm', 'Module_Clicked', 'Invoice_Print');" class="bld">Print this page</a> for your records.
+    </div>
+    <!-- start of striped-lid module -->
+    <div class="mainTeamColorBg lid-primary mgnBm15">
+        <div class="pad15">
+        	<div class="floatLeft">
+                <h2 class="alt_fontface whiteText inline">Invoice Confirmation</h2>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!-- end of striped-lid module -->
+    <div class="timeRemain padBm10">
+            Thank you! Your payment has been successfully processed. <span class="mainTeamColor">Your order confirmation number is <strong>287771</strong></span>. <span style="color:#FF0000;">Your Invoice number is <strong>1086173</strong></span>
+    </div><!-- start of opaque invoice module -->
+<div class="mgnBm15">
+<div class="teamCalColor opacity90">
+<div class="padV10 padH15">
+<div class="floatLeft">
+<div class="floatLeft"><h2 class="alt_fontface mainTeamColor">Invoice Details</h2></div></div>
+<div class="floatRight text-right"><h2 id="pricesecondaryMarket" class="text18px bld alt_fontface mainTeamColor">Invoice Total: US&nbsp;$1904.00</h2></div>
+<div class="clear"></div>
+</div>
+</div>
+<div id="invoice-bodysecondaryMarket" class="teamCalColor opacity90 invoice-body">
+<div class="padH5 padBm5">
+<div class="whiteBg pad10">
+<table id="tblInvoiceTable" class="moduleTable" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td colspan="6" style="padding-left:0px;"><div class="spacer5px"></div><div class="spacer5px"></div><div class="spacer5px"></div>
+<b>Renewable Items</b>
+<div class="spacer5px"></div></td></tr>
+<tr>
+<th width="1%">&nbsp;</th>
+<th>&nbsp;</th>
+<th>Seat</th>
+<th>Qty</th>
+<th style="text-align:center;">Price</th>
+<th style="text-align:center;">Total</th>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>2014 49ers Season Ticket</td>
+<td class="bdRt">Section 413<br>Row 17<br>23-24</td>
+<td class="bdRt">2 Adult</td>
+<td class="bdRt" align="right">US&nbsp;$950.00</td>
+<td align="right">US&nbsp;$1900.00</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>2014 Service Charge</td>
+<td class="bdRt">Section GA<br>[S] 2<br>8621</td>
+<td class="bdRt">1 Adult</td>
+<td class="bdRt" align="right">US&nbsp;$4.00</td>
+<td align="right">US&nbsp;$4.00</td>
+</tr>
+<tr>
+                          <td>&nbsp;</td>
+                          <td>INET Invoice Payment Fee</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td><td align="right">US&nbsp;$0.00</td></tr><tr><td colspan="6" style="font-size:14px;font-weight:bold;padding:5px 5px;border-bottom:0 px;" align="right">Invoice Total: US&nbsp;$1904.00<br><br></td></tr></tbody></table>
+</div>
+</div>
+</div>
+</div>
+<!-- end of opaque invoice module -->
+                <!-- HOME BUTTON -->
+                <table class="actionTable" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody><tr>
+                        <td>&nbsp;</td>
+                        <td class="text-right"><a id="lnkHome" href="https://oss.ticketmaster.com/html/login.htmI?l=EN&amp;CNTX=539b87aac1fad3-90221075&amp;tm_link=Confirmation_Home" class="button inline">home</a></td>
+                    </tr>
+                </tbody></table>
+                <!-- END HOME BUTTON -->
+            </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="clear"></div><div id="footerBg">
+    <div class="alt_fontface" id="footer">
+        <div class="floatRight copyright">© 2014 <!--ID TU_AMFOOTER_0001 EN-->Ticketmaster. All rights reserved.<!--/ID TU_AMFOOTER_0001 EN--></div>
+        <a id="termOfUse" href="#" onclick="dcsMultiTrack('DCS.dcsuri', 'Confirmation_Terms_ofUse', 'WT.ti', 'Confirmation_Terms_ofUse', 'Module_Clicked', 'Confirmation_Terms_ofUse');openPopupWithID('https://oss.ticketmaster.com/html/termsofuse_popup.htmI?src=am&amp;team=49ersnew&amp;l=EN', 650,595, 100, 200, 'termsPopup');"><!--ID TU_AMFOOTER_0002 EN-->Terms of Use<!--/ID TU_AMFOOTER_0002 EN--></a>
+        &nbsp; &nbsp;
+        <a id="privacy" href="#" onclick="dcsMultiTrack('DCS.dcsuri', 'Confirmation_Privacy_Policy', 'WT.ti', 'Confirmation_Privacy_Policy', 'Module_Clicked', 'Confirmation_Privacy_Policy');openPopupWithID('https://oss.ticketmaster.com/html/privacy_popup.htmI?src=am&amp;team=49ersnew&amp;l=EN',  650,595, 100, 200, 'privacyPopup');"><!--ID TU_AMFOOTER_0003 EN-->Privacy Policy<!--/ID TU_AMFOOTER_0003 EN--></a>
+    </div>
+</div>
+<div id="pixel_tracking_anchor"></div>
+<script type="text/javascript">
+<!--
+
+OnWindowLoad = Class.create( {
+    to_load: [],
+    to_load_last: [],
+    loaded: [],
+    flags: {
+        is_running: false,
+        window_loaded: false
+    },
+
+    initialize: function( f, options ) {
+        this.f = f;
+
+        options = Object.extend( {
+            load_last: false
+        }, options );
+
+        if ( options.load_last ) {
+            this.to_load_last.push( this );
+        }
+        else {
+            this.to_load.push( this );
+        }
+    },
+
+    run: function() {
+        if ( !this.flags.window_loaded || this.flags.is_running ) {
+            return;
+        }
+        else {
+            this.flags.is_running = true;
+        }
+
+        // run it
+        this.f();
+
+        this.flags.is_running = false;
+
+        // shift the loader object to the finish list
+        this.loaded.push( this.to_load.shift() );
+
+        // run the next one
+        this.next();
+    },
+
+    next: function() {
+        this.flags.window_loaded = true;
+
+        if ( !this.to_load.length && this.to_load_last.length ) {
+            while ( this.to_load_last.length ) {
+                this.to_load.push( this.to_load_last.shift() );
+            }
+        }
+
+        // run 'em if we got 'em
+        if ( this.to_load.length ) {
+            this.to_load[0].run();
+        }
+    }
+} );
+Event.observe( window, 'load', OnWindowLoad.prototype.next.bind( OnWindowLoad.prototype ) );
+
+
+function gaEncodeURIKeyValue(key, value) {
+    if (key == '__utmz') {
+        var values = value.split(/\./);
+        if (values.length) {
+            var back = values.pop();
+            var front = values.join('.');
+            if (front.search(/^((\d+(\.\d+)*)|-)$/) != -1) {
+                var back_values = back.split(/\|/);
+                var checked_back = '';
+                var back_kv;
+                for (var i = 0; i < back_values.length; i++) {
+                    back_kv = back_values[i].split('=');
+                    if (back_kv[0].search(/^utmc(sr|cn|md|tr|ct)$/) != -1) {
+                        if (checked_back.length) {
+                            checked_back += '|';
+                        }
+                        var back_kv_value = encodeURIComponent( back_kv[1].replace( / /g, '%20' ) );
+                        checked_back += back_kv[0] + '=' + back_kv_value;
+                    }
+                }
+                return '__utmz=' + front + '.' + checked_back;
+            }
+            else {
+                return '';
+            }
+        }
+        else {
+            return '';
+        }
+    }
+    else {
+        if (value.search(/^((\d+(\.\d+)*)|-)$/) != -1) {
+            return encodeURIComponent(key) + '=' + value;
+        }
+        else {
+            return '';
+        }
+    }
+}
+
+function extract_ga_tpqa() {    var tpqa_string = '';    return tpqa_string;
+}
+
+function create_iframe() {
+    var iframe_attributes = {
+        'width':             '1',
+        'scrolling':         'no',
+        'height':            '1',
+        'frameborder':       '0',
+        'marginwidth':       '0',
+        'marginheight':      '0',
+        'hspace':            '0',
+        'vspace':            '0',
+        'bordercolor':       '#000000',
+        'allowtransparency': 'true',
+        'src':               ''
+    };
+    var asurl = "";
+    if(asurl != '')
+    {
+        var tpqa_params = extract_ga_tpqa();
+        if (tpqa_params) {
+            asurl += '&' + tpqa_params;
+        }
+        asurl += '&true_ref=' + escape(encodeURIComponent(document.referrer).replace(/\'/g, '%27'));
+        if (asurl.length > 2082) {
+            asurl = asurl.substring(0, 2069) + asurl.substring(2069, 2082).match( /([^%]*)(%.*)?/ )[1];
+        }
+        iframe_attributes.src = asurl;
+        var iframe_e = new Element('iframe', iframe_attributes);
+        Element.insert($('pixel_tracking_anchor'), {'after': iframe_e}); 
+    }
+}
+
+
+new OnWindowLoad(create_iframe);
+
+-->
+</script>
+
+<!-- Webtrends -->
+<script language="JavaScript" type="text/javascript">
+WT_Token = 'dcse55hm0000004zl71lkdzil_8c3r';
+WT_Token_tex = 'dcskvm6rp000000slzrjk9zil_3o6u';
+</script>
+<!-- START OF SDC Advanced Tracking Code -->
+<!-- Copyright (c) 1996-2005 WebTrends Inc.  All rights reserved. -->
+<!-- V8.0 -->
+<!-- $DateTime: 2006/05/02 08:33:13 $ -->
+<script type="text/javascript"><!--
+var gService = true;
+var gTimeZone = -8;
+// Code section for Enable First-Party Cookie Tracking
+function dcsCookie(){
+	if (typeof(dcsOther)=="function"){
+		dcsOther();
+	}
+	else if (typeof(dcsPlugin)=="function"){
+		dcsPlugin();
+	}
+	else if (typeof(dcsFPC)=="function"){
+		dcsFPC(gTimeZone);
+	}
+}
+function dcsGetCookie(name){
+	var pos=document.cookie.indexOf(name+"=");
+	if (pos!=-1){
+		var start=pos+name.length+1;
+		var end=document.cookie.indexOf(";",start);
+		if (end==-1){
+			end=document.cookie.length;
+		}
+		return unescape(document.cookie.substring(start,end));
+	}
+	return null;
+}
+function dcsGetCrumb(name,crumb){
+	var aCookie=dcsGetCookie(name).split(":");
+	for (var i=0;i<aCookie.length;i++){
+		var aCrumb=aCookie[i].split("=");
+		if (crumb==aCrumb[0]){
+			return aCrumb[1];
+		}
+	}
+	return null;
+}
+function dcsGetIdCrumb(name,crumb){
+	var cookie=dcsGetCookie(name);
+	var id=cookie.substring(0,cookie.indexOf(":lv="));
+	var aCrumb=id.split("=");
+	for (var i=0;i<aCrumb.length;i++){
+		if (crumb==aCrumb[0]){
+			return aCrumb[1];
+		}
+	}
+	return null;
+}
+function dcsFPC(offset){
+	if (typeof(offset)=="undefined"){
+		return;
+	}
+	if (document.cookie.indexOf("WTLOPTOUT=")!=-1){
+		return;
+	}
+	var name=gFpc;
+	var dCur=new Date();
+	var adj=(dCur.getTimezoneOffset()*60000)+(offset*3600000);
+	dCur.setTime(dCur.getTime()+adj);
+	var dExp=new Date(dCur.getTime()+315360000000);
+	var dSes=new Date(dCur.getTime());
+	WT.co_f=WT.vt_sid=WT.vt_f=WT.vt_f_a=WT.vt_f_s=WT.vt_f_d=WT.vt_f_tlh=WT.vt_f_tlv="";
+	if (document.cookie.indexOf(name+"=")==-1){
+		if ((typeof(gWtId)!="undefined")&&(gWtId!="")){
+			WT.co_f=gWtId;
+		}
+		else if ((typeof(gTempWtId)!="undefined")&&(gTempWtId!="")){
+			WT.co_f=gTempWtId;
+			WT.vt_f="1";
+		}
+		else{
+			WT.co_f="2";
+			var cur=dCur.getTime().toString();
+			for (var i=2;i<=(32-cur.length);i++){
+				WT.co_f+=Math.floor(Math.random()*16.0).toString(16);
+			}
+			WT.co_f+=cur;
+			WT.vt_f="1";
+		}
+		if (typeof(gWtAccountRollup)=="undefined"){
+			WT.vt_f_a="1";
+		}
+		WT.vt_f_s=WT.vt_f_d="1";
+		WT.vt_f_tlh=WT.vt_f_tlv="0";
+	}
+	else{
+		var id=dcsGetIdCrumb(name,"id");
+		var lv=parseInt(dcsGetCrumb(name,"lv"));
+		var ss=parseInt(dcsGetCrumb(name,"ss"));
+		if ((id==null)||(id=="null")||isNaN(lv)||isNaN(ss)){
+			return;
+		}
+		WT.co_f=id;
+		var dLst=new Date(lv);
+		WT.vt_f_tlh=Math.floor((dLst.getTime()-adj)/1000);
+		dSes.setTime(ss);
+		if ((dCur.getTime()>(dLst.getTime()+1800000))||(dCur.getTime()>(dSes.getTime()+28800000))){
+			WT.vt_f_tlv=Math.floor((dSes.getTime()-adj)/1000);
+			dSes.setTime(dCur.getTime());
+			WT.vt_f_s="1";
+		}
+		if ((dCur.getDay()!=dLst.getDay())||(dCur.getMonth()!=dLst.getMonth())||(dCur.getYear()!=dLst.getYear())){
+			WT.vt_f_d="1";
+		}
+	}
+	WT.co_f=escape(WT.co_f);
+	WT.vt_sid=WT.co_f+"."+(dSes.getTime()-adj);
+	var expiry="; expires="+dExp.toGMTString();
+	document.cookie=name+"="+"id="+WT.co_f+":lv="+dCur.getTime().toString()+":ss="+dSes.getTime().toString()+expiry+"; path=/"+(((typeof(gFpcDom)!="undefined")&&(gFpcDom!=""))?("; domain="+gFpcDom):(""));
+	if (document.cookie.indexOf(name+"=")==-1){
+		WT.co_f=WT.vt_sid=WT.vt_f_s=WT.vt_f_d=WT.vt_f_tlh=WT.vt_f_tlv="";
+		WT.vt_f=WT.vt_f_a="2";
+	}
+}
+
+// Code section for Use the new first-party cookie generated with this tag.
+var gFpc="WT_FPC";
+var gConvert=true;
+
+function dcsAdv(){
+	dcsFunc("dcsET");
+	dcsFunc("dcsCookie");
+	dcsFunc("dcsAdSearch");
+	dcsFunc("dcsTP");
+}
+
+//-->
+</script>
+<!-- END OF SDC Advanced Tracking Code -->
+
+<!-- START OF SmartSource Data Collector TAG -->
+<!-- Copyright (c) 1996-2005 WebTrends Inc.  All rights reserved. -->
+<!-- V8.0 -->
+<!-- $DateTime: 2006/05/02 08:33:13 $ -->
+<script type="text/javascript"><!--
+var gDomain="statse.webtrendslive.com";
+var gDcsId=WT_Token;
+
+if ((typeof(gConvert)!="undefined")&&gConvert&&(document.cookie.indexOf(gFpc+"=")==-1)&&(document.cookie.indexOf("WTLOPTOUT=")==-1)){
+	document.write("<SCR"+"IPT TYPE='text/javascript' SRC='"+"http"+(window.location.protocol.indexOf('https:')==0?'s':'')+"://"+gDomain+"/"+gDcsId+"/wtid.js"+"'><\/SCR"+"IPT>");
+}
+//-->
+</script>
+<script type="text/javascript"><!--
+var gImages=new Array;
+var gIndex=0;
+var DCS=new Object();
+var WT=new Object();
+var DCSext=new Object();
+var gQP=new Array();
+var gI18n=false;
+if (window.RegExp){
+	var RE={"%09":/\t/g,"%20":/ /g,"%23":/\#/g,"%26":/\&/g,"%2B":/\+/g,"%3F":/\?/g,"%5C":/\\/g,"%22":/\"/g,"%7F":/\x7F/g,"%A0":/\xA0/g};
+	var I18NRE={"%25":/\%/g};
+}
+
+// Add customizations here
+
+function dcsMultiTrack() {
+    for (var i=0;i<arguments.length;i++) {
+        if (arguments[i].indexOf('WT.')==0) {
+            WT[arguments[i].substring(3)]=arguments[i+1];
+            i++;
+        }
+        if (arguments[i].indexOf('DCS.')==0) {
+            DCS[arguments[i].substring(4)]=arguments[i+1];
+            i++;
+        }
+        if (arguments[i].indexOf('DCSext.')==0) {
+            DCSext[arguments[i].substring(7)]=arguments[i+1];
+            i++;
+        }
+    }
+    var dCurrent=new Date();
+    DCS.dcsdat=dCurrent.getTime();
+    dcsTag();
+}
+
+
+function dcsVar(){
+	var dCurrent=new Date();
+	WT.tz=dCurrent.getTimezoneOffset()/60*-1;
+	if (WT.tz==0){
+		WT.tz="0";
+	}
+	WT.bh=dCurrent.getHours();
+	WT.ul=navigator.appName=="Netscape"?navigator.language:navigator.userLanguage;
+	if (typeof(screen)=="object"){
+		WT.cd=navigator.appName=="Netscape"?screen.pixelDepth:screen.colorDepth;
+		WT.sr=screen.width+"x"+screen.height;
+	}
+	if (typeof(navigator.javaEnabled())=="boolean"){
+		WT.jo=navigator.javaEnabled()?"Yes":"No";
+	}
+	if (document.title){
+		WT.ti=gI18n?dcsEscape(dcsEncode(document.title),I18NRE):document.title;
+	}
+	WT.js="Yes";
+	WT.jv=dcsJV();
+	if (document.body&&document.body.addBehavior){
+		document.body.addBehavior("#default#clientCaps");
+		if (document.body.connectionType){
+			WT.ct=document.body.connectionType;
+		}
+		document.body.addBehavior("#default#homePage");
+		WT.hp=document.body.isHomePage(location.href)?"1":"0";
+	}
+	if (parseInt(navigator.appVersion)>3){
+		if ((navigator.appName=="Microsoft Internet Explorer")&&document.body){
+			WT.bs=document.body.offsetWidth+"x"+document.body.offsetHeight;
+		}
+		else if (navigator.appName=="Netscape"){
+			WT.bs=window.innerWidth+"x"+window.innerHeight;
+		}
+	}
+	WT.fi="No";
+	if (window.ActiveXObject){
+		for(var i=10;i>0;i--){
+			try{
+				var flash = new ActiveXObject("ShockwaveFlash.ShockwaveFlash."+i);
+				WT.fi="Yes";
+				WT.fv=i+".0";
+				break;
+			}
+			catch(e){
+			}
+		}
+	}
+	else if (navigator.plugins&&navigator.plugins.length){
+		for (var i=0;i<navigator.plugins.length;i++){
+			if (navigator.plugins[i].name.indexOf('Shockwave Flash')!=-1){
+				WT.fi="Yes";
+				WT.fv=navigator.plugins[i].description.split(" ")[2];
+				break;
+			}
+		}
+	}
+	if (gI18n){
+		WT.em=(typeof(encodeURIComponent)=="function")?"uri":"esc";
+		if (typeof(document.defaultCharset)=="string"){
+			WT.le=document.defaultCharset;
+		}
+		else if (typeof(document.characterSet)=="string"){
+			WT.le=document.characterSet;
+		}
+	}
+	WT.tv="8.0.0";
+	WT.sp="@@SPLITVALUE@@";
+	DCS.dcsdat=dCurrent.getTime();
+	DCS.dcssip=window.location.hostname;
+	DCS.dcsuri=window.location.pathname;
+	if (window.location.search){
+		DCS.dcsqry=window.location.search;
+		if (gQP.length>0){
+			for (var i=0;i<gQP.length;i++){
+				var pos=DCS.dcsqry.indexOf(gQP[i]);
+				if (pos!=-1){
+					var front=DCS.dcsqry.substring(0,pos);
+					var end=DCS.dcsqry.substring(pos+gQP[i].length,DCS.dcsqry.length);
+					DCS.dcsqry=front+end;
+				}
+			}
+		}
+	}
+	if ((window.document.referrer!="")&&(window.document.referrer!="-")){
+		if (!(navigator.appName=="Microsoft Internet Explorer"&&parseInt(navigator.appVersion)<4)){
+			DCS.dcsref=gI18n?dcsEscape(window.document.referrer, I18NRE):window.document.referrer;
+		}
+	}
+}
+
+function dcsA(N,V){
+	return "&"+N+"="+dcsEscape(V, RE);
+}
+
+function dcsEscape(S, REL){
+	if (typeof(REL)!="undefined"){
+		var retStr = new String(S);
+		for (R in REL){
+			retStr = retStr.replace(REL[R],R);
+		}
+		return retStr;
+	}
+	else{
+		return escape(S);
+	}
+}
+
+function dcsEncode(S){
+	return (typeof(encodeURIComponent)=="function")?encodeURIComponent(S):escape(S);
+}
+
+function dcsCreateImage(dcsSrc){
+	if (document.images){
+		gImages[gIndex]=new Image;
+		if ((typeof(gHref)!="undefined")&&(gHref.length>0)){
+			gImages[gIndex].onload=gImages[gIndex].onerror=dcsLoadHref;
+		}
+		gImages[gIndex].src=dcsSrc;
+		gIndex++;
+	}
+	else{
+		document.write('<IMG ALT="" BORDER="0" NAME="DCSIMG" WIDTH="1" HEIGHT="1" SRC="'+dcsSrc+'">');
+	}
+}
+
+function dcsMeta(){
+	var elems;
+	if (document.all){
+		elems=document.all.tags("meta");
+	}
+	else if (document.documentElement){
+		elems=document.getElementsByTagName("meta");
+	}
+	if (typeof(elems)!="undefined"){
+		for (var i=1;i<=elems.length;i++){
+			var meta=elems.item(i-1);
+			if (meta.name){
+				if (meta.name.indexOf('WT.')==0){
+					WT[meta.name.substring(3)]=(gI18n&&(meta.name.indexOf('WT.ti')==0))?dcsEscape(dcsEncode(meta.content),I18NRE):meta.content;
+				}
+				else if (meta.name.indexOf('DCSext.')==0){
+					DCSext[meta.name.substring(7)]=meta.content;
+				}
+				else if (meta.name.indexOf('DCS.')==0){
+					DCS[meta.name.substring(4)]=(gI18n&&(meta.name.indexOf('DCS.dcsref')==0))?dcsEscape(meta.content,I18NRE):meta.content;
+				}
+			}
+		}
+	}
+}
+
+function dcsTag(){
+	if (document.cookie.indexOf("WTLOPTOUT=")!=-1){
+		return;
+	}
+	var P="http"+(window.location.protocol.indexOf('https:')==0?'s':'')+"://"+gDomain+(gDcsId==""?'':'/'+gDcsId)+"/dcs.gif?";
+	for (N in DCS){
+		if (DCS[N]) {
+			P+=dcsA(N,DCS[N]);
+		}
+	}
+	for (N in WT){
+		if (WT[N]) {
+			P+=dcsA("WT."+N,WT[N]);
+		}
+	}
+	for (N in DCSext){
+		if (DCSext[N]) {
+			P+=dcsA(N,DCSext[N]);
+		}
+	}
+	if (P.length>2048&&navigator.userAgent.indexOf('MSIE')>=0){
+		P=P.substring(0,2040)+"&WT.tu=1";
+	}
+	dcsCreateImage(P);
+}
+
+function dcsJV(){
+	var agt=navigator.userAgent.toLowerCase();
+	var major=parseInt(navigator.appVersion);
+	var mac=(agt.indexOf("mac")!=-1);
+	var nn=((agt.indexOf("mozilla")!=-1)&&(agt.indexOf("compatible")==-1));
+	var nn4=(nn&&(major==4));
+	var nn6up=(nn&&(major>=5));
+	var ie=((agt.indexOf("msie")!=-1)&&(agt.indexOf("opera")==-1));
+	var ie4=(ie&&(major==4)&&(agt.indexOf("msie 4")!=-1));
+	var ie5up=(ie&&!ie4);
+	var op=(agt.indexOf("opera")!=-1);
+	var op5=(agt.indexOf("opera 5")!=-1||agt.indexOf("opera/5")!=-1);
+	var op6=(agt.indexOf("opera 6")!=-1||agt.indexOf("opera/6")!=-1);
+	var op7up=(op&&!op5&&!op6);
+	var jv="1.1";
+	if (nn6up||op7up){
+		jv="1.5";
+	}
+	else if ((mac&&ie5up)||op6){
+		jv="1.4";
+	}
+	else if (ie5up||nn4||op5){
+		jv="1.3";
+	}
+	else if (ie4){
+		jv="1.2";
+	}
+	return jv;
+}
+
+function dcsFunc(func){
+	if (typeof(window[func])=="function"){
+		window[func]();
+	}
+}
+
+
+dcsVar();
+dcsMeta();
+dcsFunc("dcsAdv");
+dcsTag();
+//-->
+</script>
+
+<noscript>
+<IMG ALT="" BORDER="0" NAME="DCSIMG" WIDTH="1" HEIGHT="1" SRC="http://statse.webtrendslive.com/dcse55hm0000004zl71lkdzil_8c3r/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=8.0.0">
+</noscript>
+<!-- END OF SmartSource Data Collector  TAG -->
+<script type="text/javascript">_satellite.pageBottom();</script><!-- Webtrends --></body></html>
