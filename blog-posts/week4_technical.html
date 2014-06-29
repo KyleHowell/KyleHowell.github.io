@@ -1,0 +1,89 @@
+<!doctype html>
+<meta charset="utf-8">
+<head>
+<title>Kyles DevBootcamp Website</title>	
+<link href='http://fonts.googleapis.com/css?family=Audiowide|Quicksand:300,400,700|Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'/>
+<link REL="STYLESHEET" TYPE="text/css" HREF="style.css"> 
+</head>
+<body>
+<header>
+Looping with Ruby
+</header>
+
+<p>Ruby has a number of built in ways to help sort through data. Looping allows designers to accomplish thousands of tasks in less than a second, using only a few lines of code. Today, I will go through some of the ways we can loop using Ruby.</p>
+<h2>Each</h2>
+<p>Using each is the best way to iterate over every element in an array or hash. Adding .each to the end of an array then the command "do" allow us to perform any action we want to every item in the hash. Consider the following array and hash. In this example we will use each to leap through each item in our array and print them on the same line. The second example we will loop through a hash to print out each key and value </p>
+
+<p><div id="code">
+test_array = ["apples", "oranges", "peaches", "plums"] 
+<br>test_hash = {"apples" => 1, "oranges"=> 2, "peaches"=> 3, "plums"=> 4}
+<br>test_array.each do |x|
+<br>	puts "#{x} "
+<br>end
+<br>test_hash.each do |key, value| 
+<br>	puts "#{value} #{key}."
+<br>end
+<br>
+<strong>Output</strong>
+<br>apples oranges peaches plums
+<br>1 apples.
+<br>2 oranges.
+<br>3 peaches.
+<br>4 plums.
+</div></p>
+
+<h2>Fixed Num Loops</h2>
+<p>There are a number of other ways to loop. While most programmers prefer to use 'each' whenever possible, you might find these loops to work for you. One way is using .times. NUMBER.times will perform a certain action NUMBER amount of times. This could be usefull when you need to simply repeat information a number of times. Consider these examples:</p>
+
+<p><div id="code">
+10.times do |x|
+<br>print "#{x}"
+<br><strong>Output</strong>
+<br>0123456789
+</div></p>
+<p><div id="code">
+for k in 0..9 do
+<br> print "#{k}"
+<br>end
+<br><strong>Output</strong>
+<br>0123456789
+</div></p>
+<p>This will perform the print action 10 times, showing which of the 10 actions Ruby is performing. It is important to remember that Ruby starts counting at 0! </p>
+
+<h2>While</h2>
+<p>Lets say you want to stop looping once a certain condition is true. While can help us achieve this as while will continue to look until its first condition changes. In this example we will use puts to communicate how many of an apples we have. Once we have 0 apples, the while condition is met and the loop will stop</p>
+
+<p><div id="code">
+apples = 3
+<br>while apples != 0
+	<br>puts "There are only #{apples} apples left!"
+	<br>apples -= 1
+<br>end
+<br>puts "We are out of apples!"
+<br><strong>Output</strong>
+<br>There are only 3 apples left!
+<br>There are only 2 apples left!
+<br>There are only 1 apples left!
+<br>We are out of apples!
+</div></p>
+
+<h2>Until</h2>
+<p>Until is very similar to a while loop but it will continue to loop until the condition is true, instead of false with while. Consider the same example as above. We will print how many apples we have until our count of apples is 0. So instead of looping WHILE apples do not equal 0, we are looping UNTIL apples equal 0. </p>
+
+<p><div id="code">
+apples = 3
+<br>until apples == 0
+	<br>puts "There are only #{apples} apples left!"
+	<br>apples -= 1
+<br>end
+<br>puts "We are out of apples!"
+<br><strong>Output</strong>
+<br>There are only 3 apples left!
+<br>There are only 2 apples left!
+<br>There are only 1 apples left!
+<br>We are out of apples!
+</div></p>
+
+<p>Like any programming language there are a number of ways to perform a certain task. While looping you could choose to use conditional statements like while or until, fixed number statements such as .times, or iterating using each. Choose whatever works best for you!</p>
+
+</body>
