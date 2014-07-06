@@ -1,0 +1,87 @@
+<!doctype html>
+<meta charset="utf-8">
+<head>
+<title>Kyles DevBootcamp Website</title>	
+<link href='http://fonts.googleapis.com/css?family=Audiowide|Quicksand:300,400,700|Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'/>
+<link REL="STYLESHEET" TYPE="text/css" HREF="style.css"> 
+</head>
+<body>
+<header>
+Ruby Classes
+</header>
+
+<p>Ruby is great at organizing information. One way to group together items that share similar characteristics is with Classes. Lets say we wanted to make a database of restaurants in San Francisco. We could do this a number of ways, lets first try using a Hash. </p>
+
+<p><div id="code">
+Restaurants = {"Millenium" => {type: "Vegetarian",average_check: 60,location: "Tenderloin"}, 
+</br>				"The Waterfront" => {type: "American",average_check: 70,location: "North Beach"},
+</br> "Fleur de Lys" => {type: "French",average_check: 100,location: "Nob Hill"}}
+</div></p>
+
+<p>Notice all of our Restuarants share the same characteristics. All of them have a location, average_check, and type of food they serve. Since all of these items share the same characteristics, this is a great opportunity to use classes. This will help organize our information and access information easier. If we wanted to make a change to every Restaurant, we could simply make changes to our class and every instance of that class would change. Lets try organizing the same information using Classes. We must first make a "blueprint" for the characteristics of new members of the class. This is done using the initialize method. Initialize stores information in instance variables that we can use when writing methods for our Class. Consider this example:</p>
+
+<p><div id="code">
+class Restaurant 
+</br>	def initialize(name, type, avg_check, location)
+</br>		@name = name
+</br>		@type = type
+</br>		@avg_check = avg_check
+</br>		@location = location
+</br>	end
+</br>end
+</br>Millenium = Restaurant.new("Millenium", "Vegetarian", 60, "Tenderloin")
+</br>Waterfront = Restaurant.new("The Waterfront", "American", 70, "North Beach")
+</br>Fleur_de_Lys = Restaurant.new("Fleur De Lys", "French", 100, "Tenderloin")
+</div></p>
+
+<p>Now we have created objects of the class Restaurant that share the same input. However, we cannot access the information in our new objects without first creating methods that access them. Even though the information is stored as an instance variable, we must write a method that gives us access to the instance varable. For example say we wanted to check what type of food a Restaurant serves. We must write the following method in our Restaurant class:</p>
+
+<p><div id="code">
+def type
+</br>return @type
+</br>end
+</br>p Millenium.type
+</br>OUTPUT: "Vegetarian"</div></p>
+
+<p>Whenever we make a call to the type method it will return a String containing the type of Restaurant that it is.</p>
+<p>Now lets add a method that prints out a summary of the characteristics of a restaurant. This can be done with just a few lines of code since all of our informaion is stored in the instance variables of each object. Consider the following code:</p>
+
+<p><div id="code">
+def summary
+</br>		puts "#{@name} is a #{@type} restaurant in the #{@location} district. Its average check is #{@avg_check} dollars per person."
+</br>	end
+</br>Millenium.summary
+</br>OUTPUT: "Millenium is a Vegetarian restaurant in the Tenderloin district. Its average check is 60 dollars per person."
+</div></p>
+
+<p>Overall, Classes are a great way to organize objects that share similar characteristics. Here is our completed Restuarant Class with proper syntax. As well as an example of how to print our a summary of each Restaurant that we have.</p>
+
+<p><div id="code">
+class Restaurant 
+</br>	def initialize(name, type, avg_check, location)
+</br>		@name = name
+</br>		@type = type
+</br>		@avg_check = avg_check
+</br>		@location = location
+</br>	end
+</br>	def type
+</br>		return @type
+</br>	end
+</br>	def summary
+</br>		puts "#{@name} is a #{@type} restaurant in the #{@location} district. Its average check is #{@avg_check} dollars per person."
+</br>	end
+</br>end
+</br>
+</br>Millenium = Restaurant.new("Millenium", "Vegetarian", 60, "Tenderloin")
+</br>Waterfront = Restaurant.new("Waterfront", "American", 70, "North Beach")
+</br>Fleur_de_Lys = Restaurant.new("Fleur de Lys", "French", 100, "Tenderloin")
+</br>Millenium.summary
+</br>Waterfront.summary
+</br>Fleur_de_Lys.summary
+</br>
+</br>OUTPUT:
+</br>Millenium is a Vegetarian restaurant in the Tenderloin district. Its average check is 60 dollars per person.
+</br>Waterfront is a American restaurant in the North Beach district. Its average check is 70 dollars per person.
+</br>Fleur de Lys is a French restaurant in the Tenderloin district. Its average check is 100 dollars per person.
+</div></p>
+</body>

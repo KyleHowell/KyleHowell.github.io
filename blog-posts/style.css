@@ -2,6 +2,7 @@ body {
     background-image: url("http://i.imgur.com/WHAYHdd.jpg");
 }
 
+
 header{
 /*background-color: rgba(183, 245, 159, .99);*/
 text-align: center;
@@ -9,6 +10,8 @@ font-size: 60px;
 color: rgba(159, 245, 125);
 font-family: 'Audiowide', cursive;
 }
+
+
 
 div.opacity50{
 	opacity: 0.5;
