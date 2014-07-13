@@ -39,6 +39,17 @@ module test
 </div></p>
 
 <p>In this example, we used a module to represent the initialize method as well as our return_name method for both of our classes. By using the include keyword followed by the module name, we included our module in our class. As you can see, modules are a great way of reusing information multiple times. Since both of our classes initialize the same variable and share the same method, we only had to write out these methods once!</p>
-<p>Ruby has built in modules that are very useful. The Math module allows us to access constants such as PI and E without having to define these number ourselves! It also contains methods such as sine and log that we can use by accessing this module. </p>
+<p>Ruby has built in modules that are very useful. The Math module allows us to access constants such as PI and E without having to define these number ourselves! It also contains methods such as sine and log that we can use by accessing this module. Here, instead of using the include keyword we are using the "Module.method" notation to access our methods inside the Math class. We can use "Module::CONSTANT" notation to access constants from a module.</p>
+
+<p><div id="code">
+</br>p Math.cos(0)
+</br>p Math::PI
+</br>OUTPUT
+</br>1.0
+</br>3.141592653589793
+</div></p>
+
+<p>Overall, modules are simply a group of constants and methods. But they are not objects! Modules can be used with classes as in our example above to create objects of a class, but it is important to remember that modules are not objects. They cannot be modified, they are simply a placeholder for blocks of code.
+</p>
 
 </body>
