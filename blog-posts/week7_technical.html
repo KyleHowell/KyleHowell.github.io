@@ -1,0 +1,31 @@
+<!doctype html>
+<meta charset="utf-8">
+<head>
+<title>Kyles DevBootcamp Website</title>	
+<link href='http://fonts.googleapis.com/css?family=Audiowide|Quicksand:300,400,700|Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'/>
+<link REL="STYLESHEET" TYPE="text/css" HREF="style.css"> 
+</head>
+<body>
+<header>
+Speeding up SELECT statements
+</header>
+
+<p>This week we have gotten much practice using SQL, a language used to help interact with databases. The databases we have used were fairly small such as a list of all the contries in the world. However, most databases are very large with millions of entries to se searched through. Some of the "select" statements we have been using would simply take too long to run when sorting through that much data. Today I will discuss tricks we can use to 'speed up' our SQL statements so that they will run as efficently as possible when working with large amounts of data.</p>
+
+<h2>Indexes</h2>
+<p>Consider a database with millions of rows. Indexes can be used to search for a specific value in a particular column much faster. An index is basically a data structure for a particular column that stores the column values. Consider the select statement below on a table of students at DBC. Considering the rate of expansion of DBC, there will soon be millions of students in this database!
+
+<p><div id="code">
+SELECT * from students where first_name = "Kyle"
+</div></p>
+
+When we run a statement like this, the database will check to see if there is an index on the column being accessed. Without an index, a normal select statement must start with the first row then read through the entire table with millions of rows to find the correct rows. When a table has an index for the specific columns you are searching for, the select statement will start with that index without having to first search through the entire data. This can speed things up as much as 100 times faster by searching more efficiently! Below is an index on our first_name column to make the search faster.</p>
+
+<p><div id="code">
+CREATE INDEX name_index ON students (first_name);
+</br>SELECT * from students where first_name = "Kyle"
+</div></p>
+
+<p>When we run a statement like this, the database will check to see if there is an index on the column being accessed. So now, instead of searching through every row to find the instances where first_name is 'Kyle.' It can look at the index creadted which show the location of the rows in which that condition.</p>
+
+</body>
