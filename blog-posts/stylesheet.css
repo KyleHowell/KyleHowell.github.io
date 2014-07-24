@@ -33,9 +33,10 @@ body {
 
 p{
 	font-family: 'Open Sans', sans-serif;
-	font-size: 17px;
-	padding-bottom: 5px;
+	font-size: 18px;
+	padding-bottom: 15px;
 	padding-top: 5px;
+	line-height: 150%;
 }
 
 h2{
