@@ -1,20 +1,20 @@
 <!doctype html>
 <meta charset="utf-8">
 <head>
-<title>Week 2 Technical Blog</title>  
-<!-- <link REL="STYLESHEET" TYPE="text/css" HREF="style.css">  -->
-
+<title>Using fixed, absolute, and relative positioning in CSS</title>	<!-- ADD TITLE HERE -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:500|Open+Sans+Condensed:300|Roboto+Condensed|Audiowide|Open+Sans' rel='stylesheet' type='text/css'>
+<link REL="STYLESHEET" TYPE="text/css" HREF="reset.css"> 
+<link REL="STYLESHEET" TYPE="text/css" HREF="stylesheet.css"> 
 <style>
             body {
                 color: black;
-                background-color: #99FFCC;
+                background: #eee;
                 display: block;
                 overflow: auto;
                 height: auto;
-                background-image: url("http://i.imgur.com/WHAYHdd.jpg");
+   /*             background-image: url("http://i.imgur.com/WHAYHdd.jpg");*/
             }
             img {
-                border: 4px solid #2a6296;
                     display: block;
                     margin-left: auto;
                     margin-right: auto ;
@@ -82,14 +82,41 @@
             #absolute {
                 position: absolute;
                 left: 100px;
-                top: 1050px;
+                top: 1800px;
                 color: red;
             }
 </style>
+</head>
 
-    </head>
+
+<header>
+
+<div id="googleicon"><a href="https://plus.google.com/u/0/+kylehowellTime/about"><img src="http://imgur.com/bHb5JZH.png" onmouseover="this.src='http://i.imgur.com/4OBqXPj.png'" onmouseout="this.src='http://imgur.com/bHb5JZH.png'" /></a>
+<div id="paypalicon"><a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_send-money&nav=1&email=mrhowell0@gmail.com"><img src="http://i.imgur.com/uo8lF3O.png" onmouseover="this.src='http://i.imgur.com/oyR7O7B.png'" onmouseout="this.src='http://i.imgur.com/uo8lF3O.png'" /></a>
+<div id="emailicon"><a href="mailto:mrkylehowell@gmail.com?subject=Hello Kyle!"><img src="http://i.imgur.com/aZJHafC.png" onmouseover="this.src='http://i.imgur.com/h8ohUjZ.png'" onmouseout="this.src='http://i.imgur.com/aZJHafC.png'" /></a></div>
+
+<div id="githubicon"><a href="http://www.github.com"><img src="http://i.imgur.com/M80bkqv.png?2"></a></div>
+<div id="hostedby"><h4><A HREF="http://www.github.com">Hosted by Github</A></h4></div>
+
+<div id="title"><h1>CSS Positioning</h1></div> <!-- ADD TITLE HERE -->
+</header>
+
+
+<body>
+<div id="nav"><ul>
+<li><a href="http://kylehowell.github.io/blog-posts/Technical_index.html">Technical Blogs</a></li>
+<li><a href="http://kylehowell.github.io/">Home</a></li>
+<li><a href="http://kylehowell.github.io/blog-posts/Cultural_index.html">Cultural Blogs</a></li>
+</ul></div>
+
+<div class="wrapper"><!--  BLOG STARTS HERE -->
+
+<h2>Using fixed, absolute, and relative positioning in CSS</h2></br></br>
+
+
+
     
-	<body>
+
 
             <h1>Introduction to Positioning!</h1>
             <h2 id="fixed">Fixed Positioning</h2>
@@ -105,12 +132,25 @@
             <p id="three">Example3</p>
             <h2>Absolute Positioning</h2>
             <p>An absolute position element is positioned relative to the first parent element that has a position other than static. If no such element is found, the containing block is html. Absolutely positioned elements are removed from the normal flow. The document and other elements behave like the absolutely positioned element does not exist.</p>
-            <p><strong>Example:</strong></p>
+            </br></br></br></br>
             
             <p id="absolute">This is an example of Absolute Positioning</p>
-            <p>This is positioned 100 pixels from the left and 1050 pixels from the top of the screen.</p>
+            <p>This is positioned 100 pixels from the left and 1800 pixels from the top of the screen.</p>
             </br>
             <img src="http://www.seenbest-web-design.com/techclub/wp-content/uploads/2012/08/stand_out.jpg"/>
         
     </body>
-</html>
+
+
+
+</body>
+
+<footer>
+<!-- 
+<div id="nav"><ul>
+<li><a href="http://kylehowell.github.io/blog-posts/Technical_index.html">Technical Blogs</a></li>
+<li><a href="http://kylehowell.github.io/">Home</a></li>
+<li><a href="http://kylehowell.github.io/blog-posts/Cultural_index.html">Cultural Blogs</a></li>
+</ul></div>
+ -->
+</footer>

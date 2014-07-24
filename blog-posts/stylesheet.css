@@ -162,10 +162,12 @@ h2{
 
 #code{
 	background-color: #0099FF;
-	width: 70%;
+	width: 90%;
 	margin-left: 5%;
 	padding-top: 5px;
 	font-family: 'Roboto', sans-serif;
 	padding-bottom: 5px;
+	line-height: 160%;
+	font size: 15px;
 }
 

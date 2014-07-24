@@ -1,25 +1,48 @@
 <!doctype html>
 <meta charset="utf-8">
 <head>
-<title>Kyles DevBootcamp Website</title>	
-<link href='http://fonts.googleapis.com/css?family=Audiowide|Quicksand:300,400,700|Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'/>
-<link REL="STYLESHEET" TYPE="text/css" HREF="style.css"> 
+<title>Speeding up select statements</title>	<!-- ADD TITLE HERE -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:500|Open+Sans+Condensed:300|Roboto+Condensed|Audiowide|Open+Sans' rel='stylesheet' type='text/css'>
+<link REL="STYLESHEET" TYPE="text/css" HREF="reset.css"> 
+<link REL="STYLESHEET" TYPE="text/css" HREF="stylesheet.css"> 
 </head>
-<body>
+
+
 <header>
-Speeding up SELECT statements
+
+<div id="googleicon"><a href="https://plus.google.com/u/0/+kylehowellTime/about"><img src="http://imgur.com/bHb5JZH.png" onmouseover="this.src='http://i.imgur.com/4OBqXPj.png'" onmouseout="this.src='http://imgur.com/bHb5JZH.png'" /></a>
+<div id="paypalicon"><a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_send-money&nav=1&email=mrhowell0@gmail.com"><img src="http://i.imgur.com/uo8lF3O.png" onmouseover="this.src='http://i.imgur.com/oyR7O7B.png'" onmouseout="this.src='http://i.imgur.com/uo8lF3O.png'" /></a>
+<div id="emailicon"><a href="mailto:mrkylehowell@gmail.com?subject=Hello Kyle!"><img src="http://i.imgur.com/aZJHafC.png" onmouseover="this.src='http://i.imgur.com/h8ohUjZ.png'" onmouseout="this.src='http://i.imgur.com/aZJHafC.png'" /></a></div>
+
+<div id="githubicon"><a href="http://www.github.com"><img src="http://i.imgur.com/M80bkqv.png?2"></a></div>
+<div id="hostedby"><h4><A HREF="http://www.github.com">Hosted by Github</A></h4></div>
+
+<div id="title"><h1>SQL Efficiency</h1></div> <!-- ADD TITLE HERE -->
 </header>
+
+
+<body>
+<div id="nav"><ul>
+<li><a href="http://kylehowell.github.io/blog-posts/Technical_index.html">Technical Blogs</a></li>
+<li><a href="http://kylehowell.github.io/">Home</a></li>
+<li><a href="http://kylehowell.github.io/blog-posts/Cultural_index.html">Cultural Blogs</a></li>
+</ul></div>
+
+<div class="wrapper"><!--  BLOG STARTS HERE -->
+
+<h2>Speeding up SQL statements on large databases</h2></br></br>
 
 <p>This week we have gotten much practice using SQL, a language used to help interact with databases. The databases we have used were fairly small such as a list of all the contries in the world. However, most databases are very large with millions of entries to se searched through. Some of the "select" statements we have been using would simply take too long to run when sorting through that much data. Today I will discuss tricks we can use to 'speed up' our SQL statements so that they will run as efficently as possible when working with large amounts of data.</p>
 
 <h2>Indexes</h2>
-<p>Consider a database with millions of rows. Indexes can be used to search for a specific value in a particular column much faster. An index is basically a data structure for a particular column that stores the column values. Consider the select statement below on a table of students at DBC. Considering the rate of expansion of DBC, there will soon be millions of students in this database!</p>
+<p>Consider a database with millions of rows. Indexes can be used to search for a specific value in a particular column much faster. An index is basically a data structure for a particular column that stores the column values. Consider the select statement below on a table of students at DBC. Considering the rate of expansion of DBC, there will soon be millions of students in this database!
+</p>
 
 <p><div id="code">
 SELECT * from students where first_name = "Kyle"
 </div></p>
 
-When we run a statement like this, the database will check to see if there is an index on the column being accessed. Without an index, a normal select statement must start with the first row then read through the entire table with millions of rows to find the correct rows. When a table has an index for the specific columns you are searching for, the select statement will start with that index without having to first search through the entire data. This can speed things up as much as 100 times faster by searching more efficiently! Below is an index on our first_name column to make the search faster.</p>
+<p>When we run a statement like this, the database will check to see if there is an index on the column being accessed. Without an index, a normal select statement must start with the first row then read through the entire table with millions of rows to find the correct rows. When a table has an index for the specific columns you are searching for, the select statement will start with that index without having to first search through the entire data. This can speed things up as much as 100 times faster by searching more efficiently! Below is an index on our first_name column to make the search faster.</p>
 
 <p><div id="code">
 CREATE INDEX name_index ON students (first_name);
@@ -28,4 +51,15 @@ CREATE INDEX name_index ON students (first_name);
 
 <p>When we run a statement like this, the database will check to see if there is an index on the column being accessed. So now, instead of searching through every row to find the instances where first_name is 'Kyle.' It can look at the index creadted which show the location of the rows in which that condition.</p>
 
+</div>
 </body>
+
+<footer>
+
+<div id="nav"><ul>
+<li><a href="http://kylehowell.github.io/blog-posts/Technical_index.html">Technical Blogs</a></li>
+<li><a href="http://kylehowell.github.io/">Home</a></li>
+<li><a href="http://kylehowell.github.io/blog-posts/Cultural_index.html">Cultural Blogs</a></li>
+</ul></div>
+
+</footer>
