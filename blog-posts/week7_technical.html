@@ -13,7 +13,7 @@ Speeding up SELECT statements
 <p>This week we have gotten much practice using SQL, a language used to help interact with databases. The databases we have used were fairly small such as a list of all the contries in the world. However, most databases are very large with millions of entries to se searched through. Some of the "select" statements we have been using would simply take too long to run when sorting through that much data. Today I will discuss tricks we can use to 'speed up' our SQL statements so that they will run as efficently as possible when working with large amounts of data.</p>
 
 <h2>Indexes</h2>
-<p>Consider a database with millions of rows. Indexes can be used to search for a specific value in a particular column much faster. An index is basically a data structure for a particular column that stores the column values. Consider the select statement below on a table of students at DBC. Considering the rate of expansion of DBC, there will soon be millions of students in this database!
+<p>Consider a database with millions of rows. Indexes can be used to search for a specific value in a particular column much faster. An index is basically a data structure for a particular column that stores the column values. Consider the select statement below on a table of students at DBC. Considering the rate of expansion of DBC, there will soon be millions of students in this database!</p>
 
 <p><div id="code">
 SELECT * from students where first_name = "Kyle"
