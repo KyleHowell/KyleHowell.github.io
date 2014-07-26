@@ -1,0 +1,108 @@
+<!doctype html>
+<meta charset="utf-8">
+<head>
+<title>New Website!</title>	<!-- ADD TITLE HERE -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:500|Open+Sans+Condensed:300|Roboto+Condensed|Audiowide|Open+Sans' rel='stylesheet' type='text/css'>
+<link REL="STYLESHEET" TYPE="text/css" HREF="reset.css"> 
+<link REL="STYLESHEET" TYPE="text/css" HREF="stylesheet.css"> 
+</head>
+
+
+<header>
+
+<div id="googleicon"><a href="https://plus.google.com/u/0/+kylehowellTime/about"><img src="http://imgur.com/bHb5JZH.png" onmouseover="this.src='http://i.imgur.com/4OBqXPj.png'" onmouseout="this.src='http://imgur.com/bHb5JZH.png'" /></a>
+<div id="paypalicon"><a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_send-money&nav=1&email=mrhowell0@gmail.com"><img src="http://i.imgur.com/uo8lF3O.png" onmouseover="this.src='http://i.imgur.com/oyR7O7B.png'" onmouseout="this.src='http://i.imgur.com/uo8lF3O.png'" /></a>
+<div id="emailicon"><a href="mailto:mrkylehowell@gmail.com?subject=Hello Kyle!"><img src="http://i.imgur.com/aZJHafC.png" onmouseover="this.src='http://i.imgur.com/h8ohUjZ.png'" onmouseout="this.src='http://i.imgur.com/aZJHafC.png'" /></a></div>
+
+<div id="githubicon"><a href="http://www.github.com"><img src="http://i.imgur.com/M80bkqv.png?2"></a></div>
+<div id="hostedby"><h4><A HREF="http://www.github.com">Hosted by Github</A></h4></div>
+
+<div id="title"><h1>My New Website!</h1></div> <!-- ADD TITLE HERE -->
+</header>
+
+
+<body>
+<div id="nav"><ul>
+<li><a href="http://kylehowell.github.io/blog-posts/Technical_index.html">Technical Blogs</a></li>
+<li><a href="http://kylehowell.github.io/">Home</a></li>
+<li><a href="http://kylehowell.github.io/blog-posts/Cultural_index.html">Cultural Blogs</a></li>
+</ul></div>
+
+<div class="wrapper"><!--  BLOG STARTS HERE -->
+
+<h2>Tips and tricks I learned redesigning my website</h2>
+<p>I have spent the past few days redesigning my website from the ground up. I kept running into problems when I wanted to add new features to my website and the color scheme made things very difficult to read. Today, I will share some of the things I learned when redesigning my site. First, take a look at the old layout. While the background picture is awesome, it created too many color challenges and I had to start over. </p>
+
+<div id="center"><a href="http://i.imgur.com/KT15xxs.png?1"><img src="http://i.imgur.com/KT15xxs.png?1" title="my old blog template" /></a></div>
+
+<h2>Using HTML5 elements to organize sections</h2>
+
+<p>I wanted to create a fixed header at the top of my blog with navigation links to the rest of my site. There are many ways to do this, and I chose to use the (header) element to seperate everything. Below is the CSS portion of my header. </p>
+
+<p><div id="code">
+header {
+</br>	width: 100%;
+</br>	position: fixed;
+</br>	background: black;
+</br>	z-index: 10000000;
+</br>	top: 0;
+</br>	height: 65px;
+</br>}
+</div></p>
+
+<p>This is one of the simpler ways to create a header, but I found it very effective. The "position:fixed;" command creates the outline for our header while the width, height, and top commands create its dimensions. The z-index ensures that no other elements will scroll on top of our header, the higher the number the higher priority it has over other elements. I chose a very high number so any element with a z-index lower that this will be shown under our header. </p>
+
+<h2>Using screen percentages to add my header elements</h2>
+<p>Again, there are many ways to add elements to our header, but I chose to wrap each element in its own "div" and position it according to its percentage of the width of the screen. Try resizing this browser and notice how the links in the top right corner move and the browser is resized. I thought this was a great way to position my fixed elements. The images do not overlap unless the window is too small to be useful. These elements also look great on smaller screens such as my smartphone and tablet. Here is my CSS for my google plus link, as well as the link to send me money through paypal. Try the paypal link for yourself, donations are greatly appreciated!</p>
+
+<p><div id="code">
+#googleicon{
+</br>	position:fixed;
+</br>	top:10px;
+</br>	left:82%;
+</br>}
+</br>
+</br>#paypalicon{
+</br>	position:fixed;
+</br>	top:10px;
+</br>	left:88%;
+</br>}
+</div></p>
+
+<h2>Creating a navigation bar using lists</h2>
+<p>At its core, a navigation bar is simply an unordered list. The way it looks depends on the styles you choose in css. In order to blend our list into our header we simply gave it the same background color. To create this navigation bar, we simply created an unordered list in HTML and wrapped our list in a div called "nav." Here is the CSS for the structure of our navigation bar: <p>
+
+<p><div id="code">
+#nav{
+	width: 100%;
+	float: left;
+	background-color: black;}
+
+#nav ul{
+	list-style-type: none;
+	width: 800px;
+	margin: 0 auto;}
+
+#nav li{
+	float: left;}
+
+#nav a:link, a:visited {
+	display: block;
+    width: 230px;
+    text-decoration: none;}
+</div></p>
+
+<p>In our first call to our div, we created a width that extends the whole screen and gave it the same background color as our header so it looks like its included header, however when you scroll down the screen the navigation bar disappears to make room for the blog. I next removed the styling from the lists within that div so we could set the dimensions of our bar. I next floated lits to the left so the links are displayed side-by-side. Finally we styled our links and applied a standard width to each link. </p>
+
+</div>
+</body>
+
+<footer>
+
+<div id="nav"><ul>
+<li><a href="http://kylehowell.github.io/blog-posts/Technical_index.html">Technical Blogs</a></li>
+<li><a href="http://kylehowell.github.io/">Home</a></li>
+<li><a href="http://kylehowell.github.io/blog-posts/Cultural_index.html">Cultural Blogs</a></li>
+</ul></div>
+
+</footer>
