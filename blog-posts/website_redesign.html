@@ -46,27 +46,24 @@ header {
 </br>	background: black;
 </br>	z-index: 10000000;
 </br>	top: 0;
-</br>	height: 65px;
-</br>}
+</br>	height: 65px;}
 </div></p>
 
 <p>This is one of the simpler ways to create a header, but I found it very effective. The "position:fixed;" command creates the outline for our header while the width, height, and top commands create its dimensions. The z-index ensures that no other elements will scroll on top of our header, the higher the number the higher priority it has over other elements. I chose a very high number so any element with a z-index lower that this will be shown under our header. </p>
 
 <h2>Using screen percentages to add my header elements</h2>
-<p>Again, there are many ways to add elements to our header, but I chose to wrap each element in its own "div" and position it according to its percentage of the width of the screen. Try resizing this browser and notice how the links in the top right corner move and the browser is resized. I thought this was a great way to position my fixed elements. The images do not overlap unless the window is too small to be useful. These elements also look great on smaller screens such as my smartphone and tablet. Here is my CSS for my google plus link, as well as the link to send me money through paypal. Try the paypal link for yourself, donations are greatly appreciated!</p>
+<p>Again, there are many ways to add elements to our header, but I chose to wrap each element in its own "div" and position it according to its percentage of the width of the screen. Try resizing this browser and notice how the links in the top right corner move as the browser is resized. I thought this was a great way to position my fixed elements. The images do not overlap unless the window is too small to be useful. These elements also look great on smaller screens such as my smartphone and tablet. Here is my CSS for my google plus link, as well as the link to send me money through paypal. Try the paypal link for yourself, donations are greatly appreciated!</p>
 
 <p><div id="code">
 #googleicon{
 </br>	position:fixed;
 </br>	top:10px;
-</br>	left:82%;
-</br>}
+</br>	left:82%;}
 </br>
 </br>#paypalicon{
 </br>	position:fixed;
 </br>	top:10px;
-</br>	left:88%;
-</br>}
+</br>	left:88%;}
 </div></p>
 
 <h2>Creating a navigation bar using lists</h2>
@@ -74,22 +71,22 @@ header {
 
 <p><div id="code">
 #nav{
-	width: 100%;
-	float: left;
-	background-color: black;}
-
-#nav ul{
-	list-style-type: none;
-	width: 800px;
-	margin: 0 auto;}
-
-#nav li{
-	float: left;}
-
-#nav a:link, a:visited {
-	display: block;
-    width: 230px;
-    text-decoration: none;}
+</br>	width: 100%;
+</br>	float: left;
+</br>	background-color: black;}
+</br>
+</br>#nav ul{
+</br>	list-style-type: none;
+</br>	width: 800px;
+</br>	margin: 0 auto;}
+</br>
+</br>#nav li{
+</br>	float: left;}
+</br>
+</br>#nav a:link, a:visited {
+</br>	display: block;
+</br>    width: 230px;
+</br>    text-decoration: none;}
 </div></p>
 
 <p>In our first call to our div, we created a width that extends the whole screen and gave it the same background color as our header so it looks like its included header, however when you scroll down the screen the navigation bar disappears to make room for the blog. I next removed the styling from the lists within that div so we could set the dimensions of our bar. I next floated lits to the left so the links are displayed side-by-side. Finally we styled our links and applied a standard width to each link. </p>
