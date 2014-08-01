@@ -36,18 +36,42 @@
 <div id="center"><a href="http://i.imgur.com/lGFBKJG.jpg?1"><img src="http://i.imgur.com/lGFBKJG.jpg?1" title="git logo" /></a></div>
 
 <h2>Cloning a repository to your local system</h2>
-<p>One of the </p>
+<p>One of the best features of git is that you are able to work on the same project no matter what computer you are on. Lets say that you just bought a new computer and want to clone of your existing repositories to your local system. This is very simple, first navigate to your directory that you would like your repository to be cloned to and type in 'git init' to intialize git in this directory. Then the syntax for cloning a repository is 'git clone URL_OF_REPOSITORY.' In this example, I created a new folder called and replaced the url with the url of my repository listed on github.</p>
 
 <p><div id="code">
-module test
-</br>	def initialize(name)
+C:\Users\Kyle\Documents\test>git init
+</br>Initialized empty Git repository in C:/Users/Kyle/Documents/test/.git/
 </br>
-</br>OUTPUT:
-</br>"Kyle"
+</br>../test> git clone https://github.com/KyleHowell/phase-0-unit-3
 </div></p>
 
+<p>You will then be prompted for your username and password. This will create a working repository on your local system in the directory you are in!</p>
 
+<h2>Committing locally (Saving your work)</h2>
 
+<p>Lets say you reached a point in your work where you would like to save. A commit is basically a snapshot at that point in time that you can revert to later. You can create a commit without an internet connection, just be sure to merge between your repositories when an internet connection is available. The next command will commit all changes made within a specified folder.</p>
+
+<p><div id="code">
+git add .
+</br>git commit -m "saved work on Aug 1 1404"
+</div></p>
+
+<p>This saves your work at a given point in time. But, changes will not be saved to your repository stored online until you issue the next command:</p>
+
+<p><div id="code">
+git push origin master
+</div></p>
+
+<h2>Fetching changes</h2>
+
+<p>What if the working file on your system is not the latest version of the file? When many people are contributing to a single repository, it is important that you are working with the most up-to-date file and the next command will fetch the latest changes from your repository.</p>
+
+<p><div id="code">
+git fetch upstream
+</br>git merge upstream/master
+</br>git commit -m "message"
+</br>git push origin master
+</div></p>
 
 
 </div>
