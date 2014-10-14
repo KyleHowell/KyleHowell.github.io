@@ -18,7 +18,7 @@ header h1{
 }
 
 #title{
-	position: fixed;
+	text-align: center;
 	top: 10px;
 	font-family: 'Audiowide', cursive;
 	font-size: 40px;
@@ -71,7 +71,7 @@ h2{
 	font-family: 'Roboto Condensed', sans-serif;
 	color: black;
 	text-align: center;
-}									
+}
 
 
 #googleicon{
@@ -115,7 +115,7 @@ h2{
 	margin: 0 0 1em 0;
 	padding: 0;
 	background-color: black;
-	border-bottom: 1px solid #ccc; 
+	border-bottom: 1px solid #ccc;
 }
 
 #nav ul{
