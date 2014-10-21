@@ -177,7 +177,7 @@ h2{
 	width:400px;
 }
 
-#center, #right p, #left p{
+#center, #center p, #right p, #left p{
 	position: relative;
 	width: 100%;
 	height: 100%;
@@ -198,3 +198,15 @@ h2{
 	line-height: 160%;
 	font size: 15px;
 }
+
+#width50{
+	width:50%;
+}
+
+#centerAlign{
+	text-align: center;
+}
+
+
+
+

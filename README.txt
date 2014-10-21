@@ -4,5 +4,5 @@ ReddyReader is a 'rails as an API' back-end with a Javascript-heavy front-end de
 http://reddyreader.herokuapp.com
 
 Let's Party!
-Let's Party is a site which allows users to place pins on a map of San Francisco of free events in the city. Users can then text a number to find out how far away they are from those events.
+EventPlanner is a site which allows users to place pins on a map of San Francisco of free events in the city. Users can then text a number to find out how far away they are from those events.
 This project allowed me to interact with the Google Maps API as well as experiment with Twilio to send text messages using data from the site.
