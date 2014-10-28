@@ -3,26 +3,24 @@
 <head>
 <title>Git Cheatsheet!</title>	<!-- ADD TITLE HERE -->
 <link href='http://fonts.googleapis.com/css?family=Roboto:500|Open+Sans+Condensed:300|Roboto+Condensed|Audiowide|Open+Sans' rel='stylesheet' type='text/css'>
-<link REL="STYLESHEET" TYPE="text/css" HREF="reset.css"> 
-<link REL="STYLESHEET" TYPE="text/css" HREF="gitstyle.css"> 
+<link REL="STYLESHEET" TYPE="text/css" HREF="../css/reset.css">
+<link REL="STYLESHEET" TYPE="text/css" HREF="../css/stylesheet.css">
 </head>
 
-
 <header>
+<div class="googleicon"><a href="https://plus.google.com/u/0/+kylehowellTime/about"><img src="http://imgur.com/bHb5JZH.png" onmouseover="this.src='http://i.imgur.com/4OBqXPj.png'" onmouseout="this.src='http://imgur.com/bHb5JZH.png'" /></a></div>
+<div class="paypalicon"><a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_send-money&nav=1&email=mrhowell0@gmail.com"><img src="http://i.imgur.com/uo8lF3O.png" onmouseover="this.src='http://i.imgur.com/oyR7O7B.png'" onmouseout="this.src='http://i.imgur.com/uo8lF3O.png'" /></a></div>
+<div class="emailicon"><a href="mailto:mrkylehowell@gmail.com?subject=Hello Kyle!"><img src="http://i.imgur.com/aZJHafC.png" onmouseover="this.src='http://i.imgur.com/h8ohUjZ.png'" onmouseout="this.src='http://i.imgur.com/aZJHafC.png'" /></a></div>
 
-<div id="googleicon"><a href="https://plus.google.com/u/0/+kylehowellTime/about"><img src="http://imgur.com/bHb5JZH.png" onmouseover="this.src='http://i.imgur.com/4OBqXPj.png'" onmouseout="this.src='http://imgur.com/bHb5JZH.png'" /></a>
-<div id="paypalicon"><a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_send-money&nav=1&email=mrhowell0@gmail.com"><img src="http://i.imgur.com/uo8lF3O.png" onmouseover="this.src='http://i.imgur.com/oyR7O7B.png'" onmouseout="this.src='http://i.imgur.com/uo8lF3O.png'" /></a>
-<div id="emailicon"><a href="mailto:mrkylehowell@gmail.com?subject=Hello Kyle!"><img src="http://i.imgur.com/aZJHafC.png" onmouseover="this.src='http://i.imgur.com/h8ohUjZ.png'" onmouseout="this.src='http://i.imgur.com/aZJHafC.png'" /></a></div>
-
-<div id="githubicon"><a href="http://www.github.com"><img src="http://i.imgur.com/M80bkqv.png?2"></a></div>
-<div id="hostedby"><h4><A HREF="http://www.github.com">Hosted by Github</A></h4></div>
+<div class="githubicon"><a href="http://www.github.com"><img src="http://i.imgur.com/M80bkqv.png?2"></a></div>
+<div class="hostedby"><h4><A HREF="http://www.github.com">Hosted by Github</A></h4></div>
 
 <div id="title"><h1>Git Cheatsheet</h1></div> <!-- ADD TITLE HERE -->
 </header>
 
 
 <body>
-<div id="nav"><ul>
+<div class="nav"><ul>
 <li><a href="http://kylehowell.github.io/blog-posts/Technical_index.html">Technical Blogs</a></li>
 <li><a href="http://kylehowell.github.io/">Home</a></li>
 <li><a href="http://kylehowell.github.io/blog-posts/Cultural_index.html">Cultural Blogs</a></li>
@@ -33,12 +31,12 @@
 <h2>A reference guide to using git from the command line</h2>
 <p>Today, I will discuss the git commands needed to excecute basic commands such as cloning a repositiory to your local computer and editing and saving the changes through commits. First, you should <p><A HREF="http://git-scm.com/book/en/Getting-Started-Installing-Git">make sure git is installed on your computer.</A> We will be doing everything today using the command line.</p>
 
-<div id="center"><a href="http://i.imgur.com/lGFBKJG.jpg?1"><img src="http://i.imgur.com/lGFBKJG.jpg?1" title="git logo" /></a></div>
+<div class="center"><a href="http://i.imgur.com/lGFBKJG.jpg?1"><img src="http://i.imgur.com/lGFBKJG.jpg?1" title="git logo" /></a></div>
 
 <h2>Cloning a repository to your local system</h2>
 <p>One of the best features of git is that you are able to work on the same project no matter what computer you are on. Lets say that you just bought a new computer and want to clone of your existing repositories to your local system. This is very simple, first navigate to your directory that you would like your repository to be cloned to and type in 'git init' to intialize git in this directory. Then the syntax for cloning a repository is 'git clone URL_OF_REPOSITORY.' In this example, I created a new folder called and replaced the url with the url of my repository listed on github.</p>
 
-<p><div id="code">
+<p><div class="code">
 C:\Users\Kyle\Documents\test>git init
 </br>Initialized empty Git repository in C:/Users/Kyle/Documents/test/.git/
 </br>
@@ -51,14 +49,14 @@ C:\Users\Kyle\Documents\test>git init
 
 <p>Lets say you reached a point in your work where you would like to save. A commit is basically a snapshot at that point in time that you can revert to later. You can create a commit without an internet connection, just be sure to merge between your repositories when an internet connection is available. The next command will commit all changes made within a specified folder.</p>
 
-<p><div id="code">
+<p><div class="code">
 git add .
 </br>git commit -m "saved work on Aug 1 1404"
 </div></p>
 
 <p>This saves your work at a given point in time. But, changes will not be saved to your repository stored online until you issue the next command:</p>
 
-<p><div id="code">
+<p><div class="code">
 git push origin master
 </div></p>
 
@@ -66,7 +64,7 @@ git push origin master
 
 <p>What if the working file on your system is not the latest version of the file? When many people are contributing to a single repository, it is important that you are working with the most up-to-date file and the next command will fetch the latest changes from your repository.</p>
 
-<p><div id="code">
+<p><div class="code">
 git fetch upstream
 </br>git merge upstream/master
 </br>git commit -m "message"
@@ -79,7 +77,7 @@ git fetch upstream
 
 <footer>
 
-<div id="nav"><ul>
+<div class="nav"><ul>
 <li><a href="http://kylehowell.github.io/blog-posts/Technical_index.html">Technical Blogs</a></li>
 <li><a href="http://kylehowell.github.io/">Home</a></li>
 <li><a href="http://kylehowell.github.io/blog-posts/Cultural_index.html">Cultural Blogs</a></li>
