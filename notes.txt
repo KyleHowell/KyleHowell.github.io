@@ -1,0 +1,6 @@
+Hello, my name is Kyle Howell and I believe my technical skills and training can help your team. I have spent the past year in self study learning as much as I can about full-stack development using Ruby on Rails and Javascript. I am a recent graduate of Dev Bootcamp, an accelerated 19 week program focusing on hands on experience with those technologies. Since graduating in September, I have focused on learning Angular to further my knowledge of Javascript and learn a framework many teams are using.
+
+I believe my recent projects show how I can contribute to your team as a Junior developer. My latest project, ReddyReader, is an application using "Rails as an API" to our Javascript-heavy front end. The application is a great example of how I can contribute clean MVC Javascript code. I am excited to learn about mobile commerce, and I believe my skills can contribute immediately to your team, as well as learn new technologies and frameworks.
+
+My latest projects - http://kylehowell.github.io
+My LinkedIn Profile - https://www.linkedin.com/pub/kyle-howell/a2/353/20b
