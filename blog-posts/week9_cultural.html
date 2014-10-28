@@ -3,26 +3,23 @@
 <head>
 <title>Asking better questions</title>	<!-- ADD TITLE HERE -->
 <link href='http://fonts.googleapis.com/css?family=Roboto:500|Open+Sans+Condensed:300|Roboto+Condensed|Audiowide|Open+Sans' rel='stylesheet' type='text/css'>
-<link REL="STYLESHEET" TYPE="text/css" HREF="reset.css"> 
-<link REL="STYLESHEET" TYPE="text/css" HREF="stylesheet.css"> 
+<link REL="STYLESHEET" TYPE="text/css" HREF="../css/reset.css">
+<link REL="STYLESHEET" TYPE="text/css" HREF="../css/stylesheet.css">
 </head>
 
-
 <header>
+<div class="googleicon"><a href="https://plus.google.com/u/0/+kylehowellTime/about"><img src="http://imgur.com/bHb5JZH.png" onmouseover="this.src='http://i.imgur.com/4OBqXPj.png'" onmouseout="this.src='http://imgur.com/bHb5JZH.png'" /></a></div>
+<div class="paypalicon"><a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_send-money&nav=1&email=mrhowell0@gmail.com"><img src="http://i.imgur.com/uo8lF3O.png" onmouseover="this.src='http://i.imgur.com/oyR7O7B.png'" onmouseout="this.src='http://i.imgur.com/uo8lF3O.png'" /></a></div>
+<div class="emailicon"><a href="mailto:mrkylehowell@gmail.com?subject=Hello Kyle!"><img src="http://i.imgur.com/aZJHafC.png" onmouseover="this.src='http://i.imgur.com/h8ohUjZ.png'" onmouseout="this.src='http://i.imgur.com/aZJHafC.png'" /></a></div>
 
-<div id="googleicon"><a href="https://plus.google.com/u/0/+kylehowellTime/about"><img src="http://imgur.com/bHb5JZH.png" onmouseover="this.src='http://i.imgur.com/4OBqXPj.png'" onmouseout="this.src='http://imgur.com/bHb5JZH.png'" /></a>
-<div id="paypalicon"><a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_send-money&nav=1&email=mrhowell0@gmail.com"><img src="http://i.imgur.com/uo8lF3O.png" onmouseover="this.src='http://i.imgur.com/oyR7O7B.png'" onmouseout="this.src='http://i.imgur.com/uo8lF3O.png'" /></a>
-<div id="emailicon"><a href="mailto:mrkylehowell@gmail.com?subject=Hello Kyle!"><img src="http://i.imgur.com/aZJHafC.png" onmouseover="this.src='http://i.imgur.com/h8ohUjZ.png'" onmouseout="this.src='http://i.imgur.com/aZJHafC.png'" /></a></div>
-
-<div id="githubicon"><a href="http://www.github.com"><img src="http://i.imgur.com/M80bkqv.png?2"></a></div>
-<div id="hostedby"><h4><A HREF="http://www.github.com">Hosted by Github</A></h4></div>
+<div class="githubicon"><a href="http://www.github.com"><img src="http://i.imgur.com/M80bkqv.png?2"></a></div>
+<div class="hostedby"><h4><A HREF="http://www.github.com">Hosted by Github</A></h4></div>/a></div>
 
 <div id="title"><h1>Questions?</h1></div> <!-- ADD TITLE HERE -->
 </header>
 
-
 <body>
-<div id="nav"><ul>
+<div class="nav"><ul>
 <li><a href="http://kylehowell.github.io/blog-posts/Technical_index.html">Technical Blogs</a></li>
 <li><a href="http://kylehowell.github.io/">Home</a></li>
 <li><a href="http://kylehowell.github.io/blog-posts/Cultural_index.html">Cultural Blogs</a></li>
@@ -33,7 +30,7 @@
 <h2>How to ask better questions</h2>
 <p>When learning a new computer language, you are bound to have some questions. Luckily, there are many resources available we can use to find our answers. However, there are many things to keep in mind when asking these questions to help find our answer. </p>
 
-<div id="center"><a href="http://i.imgur.com/6qPtDkE.jpg?1"><img src="http://i.imgur.com/6qPtDkE.jpg?1" title="colorful question marks" /></a></div>
+<div class="center"><a href="http://i.imgur.com/6qPtDkE.jpg?1"><img src="http://i.imgur.com/6qPtDkE.jpg?1" title="colorful question marks" /></a></div>
 
 <h2>Has the question been asked already?</h2>
 
@@ -46,7 +43,7 @@
 <h2>Make your question approachable</h2>
 <p>A big problem I have when asking questions is phrasing them in a way to not discourage others from responding. For example, here is a question I posted to our Google+ community when I had a question about refactoring. </p>
 
-<p><div id="code">
+<p><div class="code">
 I am just finishing up the virus predictor challenge for week 5 and would really like some feedback about refactoring for this challenge, particularly from someone who has decent experience working with Ruby. I will copy what I wrote in my reflection:
 
 Sure, our original code had predicted_deaths and speed_of_spread both return half a sentence. Both use the same calculation, so it makes sense to combine them into one method. But is this good practice? If I learned anything from reading "Practical Object Oriented Design in Ruby," its that refactoring doesn't always just mean to make your code more DRY. I attempted to make these methods still have a single responsibility. Lets say I were to combine these two methods. What if our calculation for predicted_deaths changes? What if we write a new method that needs access to our speed_of_spead variable? If we combine these two methods we could run into much bigger problems later. Part of my goal with refactoring is to make to code easily updateable for future projects. So, I changed the methods to return the respective variables they are calculating and our virus_effects method to return that report sentence.
@@ -54,16 +51,13 @@ Sure, our original code had predicted_deaths and speed_of_spread both return hal
 
 <p>Whew! This is a bad question. First of all, this question is not very approachable to the people I am asking it. I start things off my saying that I want a response from someone who had alot of experience with Ruby, when really I am looking for anyone's advice! Second, this question is not very focused. I could have shortened this down to at least half of this space to make this more approachable for others to respond. It is no surprise that I only got one response to this question! </p>
 
-
 </div>
 </body>
 
 <footer>
-
-<div id="nav"><ul>
+<div class="nav"><ul>
 <li><a href="http://kylehowell.github.io/blog-posts/Technical_index.html">Technical Blogs</a></li>
 <li><a href="http://kylehowell.github.io/">Home</a></li>
 <li><a href="http://kylehowell.github.io/blog-posts/Cultural_index.html">Cultural Blogs</a></li>
 </ul></div>
-
 </footer>
