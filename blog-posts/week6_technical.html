@@ -3,26 +3,23 @@
 <head>
 <title>Ruby Classes and Modules</title>	<!-- ADD TITLE HERE -->
 <link href='http://fonts.googleapis.com/css?family=Roboto:500|Open+Sans+Condensed:300|Roboto+Condensed|Audiowide|Open+Sans' rel='stylesheet' type='text/css'>
-<link REL="STYLESHEET" TYPE="text/css" HREF="reset.css"> 
-<link REL="STYLESHEET" TYPE="text/css" HREF="stylesheet.css"> 
+<link REL="STYLESHEET" TYPE="text/css" HREF="../css/reset.css">
+<link REL="STYLESHEET" TYPE="text/css" HREF="../css/stylesheet.css">
 </head>
 
-
 <header>
+<div class="googleicon"><a href="https://plus.google.com/u/0/+kylehowellTime/about"><img src="http://imgur.com/bHb5JZH.png" onmouseover="this.src='http://i.imgur.com/4OBqXPj.png'" onmouseout="this.src='http://imgur.com/bHb5JZH.png'" /></a></div>
+<div class="paypalicon"><a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_send-money&nav=1&email=mrhowell0@gmail.com"><img src="http://i.imgur.com/uo8lF3O.png" onmouseover="this.src='http://i.imgur.com/oyR7O7B.png'" onmouseout="this.src='http://i.imgur.com/uo8lF3O.png'" /></a></div>
+<div class="emailicon"><a href="mailto:mrkylehowell@gmail.com?subject=Hello Kyle!"><img src="http://i.imgur.com/aZJHafC.png" onmouseover="this.src='http://i.imgur.com/h8ohUjZ.png'" onmouseout="this.src='http://i.imgur.com/aZJHafC.png'" /></a></div>
 
-<div id="googleicon"><a href="https://plus.google.com/u/0/+kylehowellTime/about"><img src="http://imgur.com/bHb5JZH.png" onmouseover="this.src='http://i.imgur.com/4OBqXPj.png'" onmouseout="this.src='http://imgur.com/bHb5JZH.png'" /></a>
-<div id="paypalicon"><a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_send-money&nav=1&email=mrhowell0@gmail.com"><img src="http://i.imgur.com/uo8lF3O.png" onmouseover="this.src='http://i.imgur.com/oyR7O7B.png'" onmouseout="this.src='http://i.imgur.com/uo8lF3O.png'" /></a>
-<div id="emailicon"><a href="mailto:mrkylehowell@gmail.com?subject=Hello Kyle!"><img src="http://i.imgur.com/aZJHafC.png" onmouseover="this.src='http://i.imgur.com/h8ohUjZ.png'" onmouseout="this.src='http://i.imgur.com/aZJHafC.png'" /></a></div>
-
-<div id="githubicon"><a href="http://www.github.com"><img src="http://i.imgur.com/M80bkqv.png?2"></a></div>
-<div id="hostedby"><h4><A HREF="http://www.github.com">Hosted by Github</A></h4></div>
+<div class="githubicon"><a href="http://www.github.com"><img src="http://i.imgur.com/M80bkqv.png?2"></a></div>
+<div class="hostedby"><h4><A HREF="http://www.github.com">Hosted by Github</A></h4></div>
 
 <div id="title"><h1>Ruby Modules</h1></div> <!-- ADD TITLE HERE -->
 </header>
 
-
 <body>
-<div id="nav"><ul>
+<div class="nav"><ul>
 <li><a href="http://kylehowell.github.io/blog-posts/Technical_index.html">Technical Blogs</a></li>
 <li><a href="http://kylehowell.github.io/">Home</a></li>
 <li><a href="http://kylehowell.github.io/blog-posts/Cultural_index.html">Cultural Blogs</a></li>
@@ -34,7 +31,7 @@
 
 <p>Working with Ruby for a couple of weeks now, we have become familiar working with classes. Classes are great because if objects all share the same characteristics, then organizing them in a class makes sense. But what if you have multiple classes that all want to use the same method? This is where modules come in. Modules are about providing methods that you can use across multiple classes. In cases where you want to group code that belongs together, but you do not need to create an object from that code, modules are a great way to organize that information. Lets say you wanted to create a class that initializes a single variable called name. You may have mulitple classes that initialize the same variable, so lets use a module to represent that information.</p>
 
-<p><div id="code">
+<p><div class="code">
 module test
 </br>	def initialize(name)
 </br>	@name = name
@@ -63,7 +60,7 @@ module test
 <p>In this example, we used a module to represent the initialize method as well as our return_name method for both of our classes. By using the include keyword followed by the module name, we included our module in our class. As you can see, modules are a great way of reusing information multiple times. Since both of our classes initialize the same variable and share the same method, we only had to write out these methods once!</p>
 <p>Ruby has built in modules that are very useful. The Math module allows us to access constants such as PI and E without having to define these number ourselves! It also contains methods such as sine and log that we can use by accessing this module. Here, instead of using the include keyword we are using the "Module.method" notation to access our methods inside the Math class. We can use "Module::CONSTANT" notation to access constants from a module.</p>
 
-<p><div id="code">
+<p><div class="code">
 p Math.cos(0)
 </br>p Math::PI
 </br>OUTPUT
@@ -73,16 +70,13 @@ p Math.cos(0)
 
 <p>Overall, modules are simply a group of constants and methods. But they are not objects! Modules can be used with classes as in our example above to create objects of a class, but it is important to remember that modules are not objects. They cannot be modified, they are simply a placeholder for blocks of code.
 </p>
-
 </div>
 </body>
 
 <footer>
-
-<div id="nav"><ul>
+<div class="nav"><ul>
 <li><a href="http://kylehowell.github.io/blog-posts/Technical_index.html">Technical Blogs</a></li>
 <li><a href="http://kylehowell.github.io/">Home</a></li>
 <li><a href="http://kylehowell.github.io/blog-posts/Cultural_index.html">Cultural Blogs</a></li>
 </ul></div>
-
 </footer>

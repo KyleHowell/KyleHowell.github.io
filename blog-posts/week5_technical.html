@@ -3,26 +3,24 @@
 <head>
 <title>Ruby Classes</title>	<!-- ADD TITLE HERE -->
 <link href='http://fonts.googleapis.com/css?family=Roboto:500|Open+Sans+Condensed:300|Roboto+Condensed|Audiowide|Open+Sans' rel='stylesheet' type='text/css'>
-<link REL="STYLESHEET" TYPE="text/css" HREF="reset.css"> 
-<link REL="STYLESHEET" TYPE="text/css" HREF="stylesheet.css"> 
+<link REL="STYLESHEET" TYPE="text/css" HREF="../css/reset.css">
+<link REL="STYLESHEET" TYPE="text/css" HREF="../css/stylesheet.css">
 </head>
 
-
 <header>
+<div class="googleicon"><a href="https://plus.google.com/u/0/+kylehowellTime/about"><img src="http://imgur.com/bHb5JZH.png" onmouseover="this.src='http://i.imgur.com/4OBqXPj.png'" onmouseout="this.src='http://imgur.com/bHb5JZH.png'" /></a></div>
+<div class="paypalicon"><a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_send-money&nav=1&email=mrhowell0@gmail.com"><img src="http://i.imgur.com/uo8lF3O.png" onmouseover="this.src='http://i.imgur.com/oyR7O7B.png'" onmouseout="this.src='http://i.imgur.com/uo8lF3O.png'" /></a></div>
+<div class="emailicon"><a href="mailto:mrkylehowell@gmail.com?subject=Hello Kyle!"><img src="http://i.imgur.com/aZJHafC.png" onmouseover="this.src='http://i.imgur.com/h8ohUjZ.png'" onmouseout="this.src='http://i.imgur.com/aZJHafC.png'" /></a></div>
 
-<div id="googleicon"><a href="https://plus.google.com/u/0/+kylehowellTime/about"><img src="http://imgur.com/bHb5JZH.png" onmouseover="this.src='http://i.imgur.com/4OBqXPj.png'" onmouseout="this.src='http://imgur.com/bHb5JZH.png'" /></a>
-<div id="paypalicon"><a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_send-money&nav=1&email=mrhowell0@gmail.com"><img src="http://i.imgur.com/uo8lF3O.png" onmouseover="this.src='http://i.imgur.com/oyR7O7B.png'" onmouseout="this.src='http://i.imgur.com/uo8lF3O.png'" /></a>
-<div id="emailicon"><a href="mailto:mrkylehowell@gmail.com?subject=Hello Kyle!"><img src="http://i.imgur.com/aZJHafC.png" onmouseover="this.src='http://i.imgur.com/h8ohUjZ.png'" onmouseout="this.src='http://i.imgur.com/aZJHafC.png'" /></a></div>
-
-<div id="githubicon"><a href="http://www.github.com"><img src="http://i.imgur.com/M80bkqv.png?2"></a></div>
-<div id="hostedby"><h4><A HREF="http://www.github.com">Hosted by Github</A></h4></div>
+<div class="githubicon"><a href="http://www.github.com"><img src="http://i.imgur.com/M80bkqv.png?2"></a></div>
+<div class="hostedby"><h4><A HREF="http://www.github.com">Hosted by Github</A></h4></div>
 
 <div id="title"><h1>Ruby Classes</h1></div> <!-- ADD TITLE HERE -->
 </header>
 
 
 <body>
-<div id="nav"><ul>
+<div class="nav"><ul>
 <li><a href="http://kylehowell.github.io/blog-posts/Technical_index.html">Technical Blogs</a></li>
 <li><a href="http://kylehowell.github.io/">Home</a></li>
 <li><a href="http://kylehowell.github.io/blog-posts/Cultural_index.html">Cultural Blogs</a></li>
@@ -34,16 +32,16 @@
 
 <p>Ruby is great at organizing information. One way to group together items that share similar characteristics is with Classes. Lets say we wanted to make a database of restaurants in San Francisco. We could do this a number of ways, lets first try using a Hash. </p>
 
-<p><div id="code">
-Restaurants = {"Millenium" => {type: "Vegetarian",average_check: 60,location: "Tenderloin"}, 
+<p><div class="code">
+Restaurants = {"Millenium" => {type: "Vegetarian",average_check: 60,location: "Tenderloin"},
 </br>				"The Waterfront" => {type: "American",average_check: 70,location: "North Beach"},
 </br> "Fleur de Lys" => {type: "French",average_check: 100,location: "Nob Hill"}}
 </div></p>
 
 <p>Notice all of our Restuarants share the same characteristics. All of them have a location, average_check, and type of food they serve. Since all of these items share the same characteristics, this is a great opportunity to use classes. This will help organize our information and access information easier. If we wanted to make a change to every Restaurant, we could simply make changes to our class and every instance of that class would change. Lets try organizing the same information using Classes. We must first make a "blueprint" for the characteristics of new members of the class. This is done using the initialize method. Initialize stores information in instance variables that we can use when writing methods for our Class. Consider this example:</p>
 
-<p><div id="code">
-class Restaurant 
+<p><div class="code">
+class Restaurant
 </br>	def initialize(name, type, avg_check, location)
 </br>		@name = name
 </br>		@type = type
@@ -56,19 +54,24 @@ class Restaurant
 </br>Fleur_de_Lys = Restaurant.new("Fleur De Lys", "French", 100, "Tenderloin")
 </div></p>
 
-<p>Now we have created objects of the class Restaurant that share the same input. However, we cannot access the information in our new objects without first creating methods that access them. Even though the information is stored as an instance variable, we must write a method that gives us access to the instance varable. For example say we wanted to check what type of food a Restaurant serves. We must write the following method in our Restaurant class:</p>
+<p>Now we have created objects of the class Restaurant that share the same input. However, we cannot access the information in our new objects without first creating methods that access them. Even though the information is stored as an instance variable, we must write a method that gives us access to the instance varable. Or we could use 'attr_reader', which is the same as adding the code below.</p>
 
-<p><div id="code">
+<p><div class="code">
 def type
 </br>return @type
 </br>end
 </br>p Millenium.type
 </br>OUTPUT: "Vegetarian"</div></p>
 
-<p>Whenever we make a call to the type method it will return a String containing the type of Restaurant that it is.</p>
+<p>Whenever we make a call to the type method it will return a String containing the type of Restaurant that it is. We just add the folowing code to the top of our class.</p>
+
+<p><div class="code">
+attr_reader :type
+</div></p>
+
 <p>Now lets add a method that prints out a summary of the characteristics of a restaurant. This can be done with just a few lines of code since all of our informaion is stored in the instance variables of each object. Consider the following code:</p>
 
-<p><div id="code">
+<p><div class="code">
 def summary
 </br>		puts "#{@name} is a #{@type} restaurant in the #{@location} district. Its average check is #{@avg_check} dollars per person."
 </br>	end
@@ -78,8 +81,8 @@ def summary
 
 <p>Overall, Classes are a great way to organize objects that share similar characteristics. Here is our completed Restuarant Class with proper syntax. As well as an example of how to print our a summary of each Restaurant that we have.</p>
 
-<p><div id="code">
-class Restaurant 
+<p><div class="code">
+class Restaurant
 </br>	def initialize(name, type, avg_check, location)
 </br>		@name = name
 </br>		@type = type
@@ -111,11 +114,9 @@ class Restaurant
 </body>
 
 <footer>
-
-<div id="nav"><ul>
+<div class="nav"><ul>
 <li><a href="http://kylehowell.github.io/blog-posts/Technical_index.html">Technical Blogs</a></li>
 <li><a href="http://kylehowell.github.io/">Home</a></li>
 <li><a href="http://kylehowell.github.io/blog-posts/Cultural_index.html">Cultural Blogs</a></li>
 </ul></div>
-
 </footer>
