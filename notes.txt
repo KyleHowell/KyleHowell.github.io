@@ -1,6 +1,19 @@
 Hello, my name is Kyle Howell and I believe my technical skills and training can help your team. I have spent the past year in self study learning as much as I can about full-stack development using Ruby on Rails and Javascript. I am a recent graduate of Dev Bootcamp, an accelerated 19 week program focusing on hands on experience with those technologies. Since graduating in September, I have focused on learning Angular to further my knowledge of Javascript and learn a framework many teams are using.
 
-I believe my recent projects show how I can contribute to your team as a Junior developer. My latest project, ReddyReader, is an application using "Rails as an API" to our Javascript-heavy front end. The application is a great example of how I can contribute clean MVC Javascript code. I am excited to learn about mobile commerce, and I believe my skills can contribute immediately to your team, as well as learn new technologies and frameworks.
+I believe my recent projects show how I can contribute to your team as a Junior developer. My latest project, ReddyReader, is an application using "Rails as an API" to our Javascript-heavy front end. The application is a great example of how I can contribute clean MVC Javascript code. I encourage you to look at my personal website to see my portfolio and an example of what I can create.
 
 My latest projects - http://kylehowell.github.io
+
 My LinkedIn Profile - https://www.linkedin.com/pub/kyle-howell/a2/353/20b
+
+Hello, my name is Kyle Howell and I believe my unique background and experience is a perfect fit at Yelp. After graduating with a Business Economics degree from UC Santa Barbara, I spent four years working in the food-service industry holding just about every front of house position and eventually becoming a trainer and bar manager. During that time, I pursued Web Development as a hobby, creating my own website and learning as much as I can about HTML, CSS and Javascript. I left the food-service industry to pursue my career in Web Development and enrolled in Dev Bootcamp, an 18 week accelerated program giving my the tools I need to become a full-stack web developer.
+
+I believe my past experience in the Restaurant industry can offer unique perspective to your team. But above all else, I know my experience as a Web Developer give me the skills I need to immediately contribute. I have experience working with MySQL and I share the same belief in Test-Driven Development to clearly define the expectations from your code.
+
+Although I am applying as a Software Engineer, I am open to any position with your company that can perhaps match my Business Economics background and hands-on experience in the Restaurant Industry. However, I know my skills as a Developer would be the perfect match for Yelp. I encourage you to look at my portfolio of recent projects built using Ruby on Rails as well as my personal blog to get a look of what I have created.
+
+I look forward to hearing from your company.
+
+Kyle Howell
+http://kylehowell.github.io
+mrkylehowell@gmail.com

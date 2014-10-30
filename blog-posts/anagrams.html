@@ -16,7 +16,7 @@
 <div class="githubicon"><a href="http://www.github.com"><img src="http://i.imgur.com/M80bkqv.png?2"></a></div>
 <div class="hostedby"><h4><A HREF="http://www.github.com">Hosted by Github</A></h4></div>
 
-<div id="title"><h1>Anagramization Optimizaion</h1></div> <!-- ADD TITLE HERE -->
+<div id="title"><h1>Anagrams</h1></div> <!-- ADD TITLE HERE -->
 </header>
 
 
@@ -29,21 +29,33 @@
 
 <div class="wrapper"><!--  BLOG STARTS HERE -->
 
-<h2>A Sample Blog Description with words</h2>
-<p>paragraph</p>
+<h2>Practice Interview Question: Anagrams</h2>
+<p>Hello, it has been a while since I wrote a blog so I thought I would upload a practice interview question I had to solve. I would appreciate any feedback on my solution. <A HREF="https://github.com/KyleHowell/InterviewQuestions/blob/master/anagrams/anagram_solution.rb">Here is a link to my repository on GitHub, please leave comments!</A>
+</p>
 
 <div class="center"><a href="http://i.imgur.com/MwUwMu9.jpg?1"><img src="http://i.imgur.com/MwUwMu9.jpg?1" title="happy face" /></a></div>
 
-<p><A HREF="http://nparc.cisti-icist.nrc-cnrc.gc.ca/npsi/ctrl?action=shwart&index=an&req=5763742&lang=en">TEXT</A>
+<p>Write a program to find all of the anagrams in a dictionary in which there are at least 4 letters in the word and at least as many anagrams as there are letters. The dictionary will be a file on disk with one line per word. Your operating system likely already has such a file in /usr/dict/words or /usr/share/dict/words. The output produced by your code should be in this format:
+</br>
+</br>emit, item, mite, time
+</br>merit, miter, mitre, remit, timer</p>
+
+<p>The first argument on the command line will be the path to your word list file. I would run this program like:
+</br>$ ruby anagram_solution.rb /usr/share/dict/words</p>
 
 <p><div class="code">
-module test
-</br>	def initialize(name)
+sorted_words = Hash.new{|hash, key| hash[key] = Array.new}
+</br>File.open(ARGV[0]).each_line do |word|
+</br>  sorted_words[word.delete("\n").downcase.chars.sort.join] << word.delete("\n") if word.delete("\n").length > 3
+</br>end
 </br>
-</br>OUTPUT:
-</br>"Kyle"
+</br>sorted_words.each do |sorted_word, anagrams|
+</br>  if (anagrams.length >= sorted_word.length)
+</br>    anagrams.each{|word| print "#{word} "}
+</br>    print "\n"
+</br>  end
+</br>end
 </div></p>
-
 </div>
 </body>
 
