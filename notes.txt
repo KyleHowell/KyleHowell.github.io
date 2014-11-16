@@ -1,6 +1,6 @@
-Hello, my name is Kyle Howell and I believe my technical skills and training can help your team. I have spent the past year in self study learning as much as I can about full-stack development using Ruby on Rails and Javascript. I am a recent graduate of Dev Bootcamp, an accelerated 19 week program focusing on hands on experience with those technologies. Since graduating in September, I have focused on learning Angular to further my knowledge of Javascript and learn a framework many teams are using.
+Hello, my name is Kyle Howell and I believe my technical skills and training can help your team. I have spent the past year in self study learning as much as I can about full-stack development using Ruby on Rails and Javascript. I am a recent graduate of Dev Bootcamp, an accelerated 19 week program focusing on hands on experience with those technologies. Since graduating in September, I have focused on learning Javascript frameworks focusing on Node.js to supplement my Javascript knowledge.
 
-I believe my recent projects show how I can contribute to your team as a Junior developer. My latest project, ReddyReader, is an application using "Rails as an API" to our Javascript-heavy front end. The application is a great example of how I can contribute clean MVC Javascript code. I encourage you to look at my personal website to see my portfolio and an example of what I can create.
+I believe my recent projects show how I can contribute to your team as a Web Developer. My latest project, ReddyReader, is an application using "Rails as an API" to our Javascript-heavy front end. The application is a great example of how I can contribute clean MVC Javascript code. I encourage you to look at my personal website to see my portfolio and an example of what I can create.
 
 My latest projects - http://kylehowell.github.io
 
@@ -17,3 +17,9 @@ I look forward to hearing from your company.
 Kyle Howell
 http://kylehowell.github.io
 mrkylehowell@gmail.com
+
+________________________________________
+
+Getting localhost running for development
+from website directory:
+  php -S localhost:8000

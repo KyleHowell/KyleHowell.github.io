@@ -199,7 +199,7 @@ h2{
 	font size: 15px;
 }
 
-#width50{
+.width50{
 	width:50%;
 }
 
@@ -207,6 +207,10 @@ h2{
 	text-align: center;
 }
 
+#map {
+	height:400px;
+	width:100%;
+}
 
 
 
