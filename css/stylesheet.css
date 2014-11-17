@@ -207,7 +207,7 @@ h2{
 	text-align: center;
 }
 
-#map {
+#map, #mapZoom, #mapLayers {
 	height:400px;
 	width:100%;
 }
