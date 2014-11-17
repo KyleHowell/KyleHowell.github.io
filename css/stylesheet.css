@@ -212,5 +212,12 @@ h2{
 	width:100%;
 }
 
+div.bar {
+    display: inline-block;
+    width: 20px;
+    height: 75px;   /* We'll override this later */
+    background-color: teal;
+}
+
 
 
