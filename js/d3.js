@@ -44,7 +44,7 @@ svgUpfront.selectAll("text").data(upfrontCost).enter()
 d3.select("body").append("h2").text("Hourly Cost per Month");
 
 var svgHourly = d3.select("body").append("svg").attr("width", svgWidth).attr("height", svgHeight)
-  .style("display", "block").style("margin", "auto");
+  .style("display", "block").style("margin", "auto").style("margin-bottom", "20px");
 
 svgHourly.selectAll("rect").data(hourlyCost).enter()
   .append("rect")
