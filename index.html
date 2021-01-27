@@ -1,70 +1,79 @@
 <!doctype html>
-<meta charset="utf-8">
+
+<html lang="en">
 <head>
-<title>Kyle Howell's Portfolio</title>	<!-- ADD TITLE HERE -->
-<link href='http://fonts.googleapis.com/css?family=Roboto:500|Open+Sans+Condensed:300|Roboto+Condensed|Audiowide|Open+Sans' rel='stylesheet' type='text/css'>
-<link rel="icon" href="images/favicon.ico" />
-<link REL="STYLESHEET" TYPE="text/css" HREF="css/reset.css">
-<link REL="STYLESHEET" TYPE="text/css" HREF="css/stylesheet.css">
-<link REL="STYLESHEET" TYPE="text/css" HREF="css/bootstrap.min.css">
-<!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
+  <meta charset="utf-8">
+  <title>Kyle Howell</title>
+  <meta name="description" content="Kyle Howell's Portfolio">
+  <meta name="author" content="Kyle Howell">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:500|Open+Sans+Condensed:300|Roboto+Condensed|Audiowide|Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="icon" href="images/favicon.ico" />
+  <link REL="STYLESHEET" TYPE="text/css" HREF="../css/reset.css">
+  <link REL="STYLESHEET" TYPE="text/css" HREF="../css/stylesheet.css">
 </head>
 
-<header>
-<div class="googleicon"><a href="https://plus.google.com/u/0/+kylehowellTime/about"><img src="http://imgur.com/bHb5JZH.png" onmouseover="this.src='http://i.imgur.com/4OBqXPj.png'" onmouseout="this.src='http://imgur.com/bHb5JZH.png'" /></a></div>
-<div class="paypalicon"><a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_send-money&nav=1&email=mrhowell0@gmail.com"><img src="http://i.imgur.com/uo8lF3O.png" onmouseover="this.src='http://i.imgur.com/oyR7O7B.png'" onmouseout="this.src='http://i.imgur.com/uo8lF3O.png'" /></a></div>
-<div class="emailicon"><a href="mailto:mrkylehowell@gmail.com?subject=Hello Kyle!"><img src="http://i.imgur.com/aZJHafC.png" onmouseover="this.src='http://i.imgur.com/h8ohUjZ.png'" onmouseout="this.src='http://i.imgur.com/aZJHafC.png'" /></a></div>
-
-<div class="githubicon"><a href="http://www.github.com"><img src="http://i.imgur.com/M80bkqv.png?2"></a></div>
-<div class="hostedby"><h4><A HREF="http://www.github.com">Hosted by Github</A></h4></div>
-
-<div id="title"><h1>Kyle Howell</h1></div> <!-- ADD TITLE HERE -->
-</header>
-
 <body>
-<div class="nav"><ul>
-<li><a href="http://kylehowell.github.io/blog-posts/Technical_index.html">Technical Blogs</a></li>
-<li><a href="http://kylehowell.github.io/">Home</a></li>
-<li><a href="http://kylehowell.github.io/blog-posts/Cultural_index.html">Cultural Blogs</a></li>
-</ul></div>
+<div class="header">
+  <div class="icon-wrapper">
+    <div class="icon">
+      <a href="https://plus.google.com/u/0/+kylehowellTime/about">
+        <img src="http://imgur.com/bHb5JZH.png"
+          onmouseover="this.src='http://i.imgur.com/4OBqXPj.png'"
+          onmouseout="this.src='http://imgur.com/bHb5JZH.png'" />
+      </a>
+    </div>
+    <div class="icon">
+      <a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_send-money&nav=1&email=mrhowell0@gmail.com">
+        <img src="http://i.imgur.com/uo8lF3O.png"
+          onmouseover="this.src='http://i.imgur.com/oyR7O7B.png'"
+          onmouseout="this.src='http://i.imgur.com/uo8lF3O.png'" />
+      </a>
+    </div>
+    <div class="icon">
+      <a href="mailto:mrkylehowell@gmail.com?subject=Hello Kyle!">
+        <img src="http://i.imgur.com/aZJHafC.png"
+        onmouseover="this.src='http://i.imgur.com/h8ohUjZ.png'"
+        onmouseout="this.src='http://i.imgur.com/aZJHafC.png'" />
+      </a>
+    </div>
+  </div>
+  <div class="github-wrapper">
+    <div class="icon">
+      <a href="http://www.github.com">
+        <img src="http://i.imgur.com/M80bkqv.png?2">
+      </a>
+    </div>
+    <div class="hostedby">
+      <h4>
+        <a href="http://www.github.com">Hosted by Github</a>
+      </h4>
+    </div>
+  </div>
 
-<div class="container">
-  <div class="row">
-  <div class="col-lg-10-offset-1 text-center">
-    <a href="http://reddyreader-staging.herokuapp.com"><h2>ReddyReader</h2></a>
-    <div class="col-md-6">
-    <div class="centerAlign"><a href="http://reddyreader-staging.herokuapp.com"><img src="images/ReddyReader.png" title="ReddyReader Website" /></a></div></div>
-    <div class="col-md-6"><div class="centerAlign"><p>ReddyReader is a site that provides feedback and analysis on your reading speed. The app administers a speed reading test and then calculates how long it will take to read that book.  Users of the site find out how long it will take to read a book, and can then buy that book directly.</p>
-    <p>ReddyReader is a Rails back-end with a Javascript-heavy front-end deployed to Heroku via Circle CI, utilizing a number of APIs, technologies and frameworks, including Google Books, Goodreads OAuth, Amazon Product API, Chart JS, JQuery, Bootstrap and Mustache, implemented via TDD with RSpec, Capybara and Jasmine.</p></div></div>
-  </div></div>
+  <div class="title">
+    <h1>Kyle Howell</h1>
+  </div>
+</div>
 
-  <div class="row">
-  <div class="col-lg-10-offset-1 text-center">
-  <a href="https://event-planner-sf.herokuapp.com/"><h2>EventPlanner</h2></a>
-    <div class="col-md-6">
-    <div class="centerAlign"><a href="https://event-planner-sf.herokuapp.com/"><img src="images/EventPlanner.png" title="EventPlanner Website" /></a></div></div>
-    <div class="col-md-6"><div class="centerAlign"><p>EventPlanner is a site which allows users to place pins on a map of San Francisco of free events in the city. Users can then text a number to find out how far away they are from those events.</p>
-    <p>EventPlanner is built using Rails consuming the Google Maps and Twilio SMS API. I wanted to experiment with geolocation data and use Twilio to send text messages using live input from the application. I </p></div></div>
-  </div></div>
+<div class="nav">
+  <ul>
+    <li>
+      <a href="http://kylehowell.github.io/blog-posts/Technical_index.html">
+        Technical Blogs
+      </a>
+    </li>
+    <li>
+      <a href="http://kylehowell.github.io/">
+        Home
+      </a>
+    </li>
+    <li>
+      <a href="http://kylehowell.github.io/blog-posts/Cultural_index.html">
+        Personal Blogs
+      </a>
+    </li>
+  </ul>
+</div>
 
-  <div class="row">
-  <div class="col-lg-10-offset-1 text-center">
-  <a href="http://stackoverflow-project.herokuapp.com"><h2>StackOverflowClone</h2></a>
-    <div class="col-md-6">
-    <div class="centerAlign"><a href="http://stackoverflow-project.herokuapp.com"><img src="images/StackOverflow.png" title="StackOverflow Clone Website" /></a></div></div>
-    <div class="col-md-6">
-    <div class="centerAlign"><p>StackOverflowClone was created to model StackOverflow.com using Rails 4. I was the team lead on this project and we built this app in a weekend with other students from DevBootcamp. This project really gave me the chance to experiment with a number of Rails features.</p></div></div>
-  </div></div>
-</div><br>
 </body>
-
-<footer>
-<div class="nav"><ul>
-<li><a href="http://kylehowell.github.io/blog-posts/Technical_index.html">Technical Blogs</a></li>
-<li><a href="http://kylehowell.github.io/">Home</a></li>
-<li><a href="http://kylehowell.github.io/blog-posts/Cultural_index.html">Cultural Blogs</a></li>
-</ul></div>
-</footer>
+</html>

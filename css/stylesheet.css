@@ -4,123 +4,54 @@ font-family: 'Roboto Condensed', sans-serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Audiowide', cursive;*/
 
-header {
-	width: 100%;
-	position: fixed;
-	background: black;
-	z-index: 10000000;
-	top: 0;
-	height: 65px;
-}
-
-header h1{
-	text-align: center;
-}
-
-#title{
-	text-align: center;
-	top: 10px;
-	font-family: 'Audiowide', cursive;
-	font-size: 40px;
-	left: 36%;
-	color: white;
-	text-shadow: 2px 2px 2px #0000B2;
-}
-
 body {
 	background: #eee;
 	padding-top: 65px;
 }
 
-p{
+p {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
+	line-height: 150%;
 	padding-bottom: 15px;
 	padding-top: 5px;
-	line-height: 150%;
 }
 
-h2{
-	text-align: center;
+h2 {
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 24px;
 	padding-bottom: 25px;
 	padding-top: 40px;
-}
-
-#welcome {
-	font-family: 'Audiowide', cursive;
-	font-size: 60px;
-	color: blue;
-	text-align: center;
-	text-shadow: 5px 5px 5px silver;
-	padding-bottom: 25px;
-}
-
-#latest {
-	font-family: 'Audiowide', cursive;
-	font-size: 40px;
-	color: blue;
-	text-align: center;
-	text-shadow: 2px 2px 2px silver;
-	padding-bottom: 25px;
-}
-
-#tiny{
-	font-size: 12px;
-	font-family: 'Roboto Condensed', sans-serif;
-	color: black;
 	text-align: center;
 }
 
-.googleicon{
-	position:fixed;
-	top:10px;
-	left:82%;
-}
-
-.paypalicon{
-	position:fixed;
-	top:10px;
-	left:88%;
-}
-
-.emailicon{
-	position:fixed;
-	top:10px;
-	left:94%;
-}
-
-.githubicon{
-	position:fixed;
+.icon-wrapper {
+	align-items: flex-start;
+	display: flex;
+	flex-direction: row-reverse;
+	height: 200px;
+	justify-content: space-evenly;
+	position: fixed;
+	right: 0;
 	top: 10px;
-	left: 2%;
-}
-
-.hostedby a{
-	position:fixed;
-	top: 50px;
-	left: 1%;
-	font-size: 10px;
-	color: white;
-	font-family: 'Roboto Condensed', sans-serif;
-	text-decoration: none;
+	width: 300px;
+	z-index: 1;
 }
 
 .nav{
-	width: 100%;
+	background-color: black;
+	border-bottom: 1px solid #ccc;
 	float: left;
 	margin: 0 0 1em 0;
 	padding: 0;
-	background-color: black;
-	border-bottom: 1px solid #ccc;
+	width: 100%;
 }
 
 .nav ul{
 	list-style-type: none;
-	width: 800px;
-	padding: 0;
 	margin: 0 auto;
+	padding: 0;
+	width: 800px;
 }
 
 .nav li{
@@ -128,48 +59,113 @@ h2{
 }
 
 .nav a:link, a:visited {
+	background-color: black;
+	color: #FFFFFF;
 	display: block;
-    width: 230px;
-    font-weight: bold;
-    color: #FFFFFF;
-    background-color: black;
-    text-align: center;
-    padding: 8px 15px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	padding: 8px 15px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 230px;
 }
 
 .nav a:hover, a:active {
 	background-color: blue;
 }
 
-.nav li:first-child a {
-	border-left: 1 px solid #c;
+.header {
+	background: black;
+	height: 65px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.title {
+	color: white;
+	font-family: 'Audiowide', cursive;
+	font-size: 40px;
+	position: fixed;
+	text-align: center;
+	text-shadow: 2px 2px 2px #0000B2;
+	top: 10px;
+	width: 100%;
+}
+
+.welcome {
+	color: blue;
+	font-family: 'Audiowide', cursive;
+	font-size: 60px;
+	padding-bottom: 25px;
+	text-align: center;
+	text-shadow: 5px 5px 5px silver;
+}
+
+.latest {
+	color: blue;
+	font-family: 'Audiowide', cursive;
+	font-size: 40px;
+	padding-bottom: 25px;
+	text-align: center;
+	text-shadow: 2px 2px 2px silver;
+}
+
+.tiny {
+	color: black;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 12px;
+	text-align: center;
+}
+
+.github-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	height: 65px;
+	width: 65px;
+}
+
+.github-wrapper .icon {
+	text-align: center;
+}
+
+.hostedby a {
+	color: white;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 10px;
+	position: fixed;
+	text-decoration: none;
+	top: 50px;
 }
 
 .wrapper {
-	width: 100%;
-	max-width: 600px;
 	margin: 0 auto;
+	max-width: 600px;
 	padding: 0 1em;
+	width: 100%;
 }
 
-.wrapper a:visited{
-	text-decoration: none;
+.wrapper a:visited {
 	color: blue;
+	text-decoration: none;
 }
 
-.pic_wrap{
-	width: 800px;
-	margin:0 auto;
+.pic_wrap {
 	background: #eee;
+	margin:0 auto;
+	width: 800px;
 }
 
 .left{
 	float:left;
-	width:400px;
 	vertical-align: middle;
+	width:400px;
 }
 
 .right{
@@ -178,43 +174,39 @@ h2{
 }
 
 .center, .center p, .right p, .left p{
-	position: relative;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	vertical-align: middle;
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
 	font-weight: 500;
+	height: 100%;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
 }
 
 .code{
 	background-color: #0099FF;
-	width: 90%;
-	margin-left: 5%;
-	padding-top: 5px;
 	font-family: 'Roboto', sans-serif;
-	padding-bottom: 5px;
+	font-size: 15px;
 	line-height: 160%;
-	font size: 15px;
-}
-
-.width50{
-	width:50%;
+	margin-left: 5%;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	width: 90%;
 }
 
 .centerAlign{
 	text-align: center;
 }
 
-#map, #mapZoom, #mapLayers {
+.map, .mapZoom, .mapLayers {
 	height:400px;
 	width:100%;
 }
 
-div.bar {
-    display: inline-block;
-    width: 20px;
-    height: 75px;   /* We'll override this later */
-    background-color: teal;
+.bar {
+	background-color: teal;
+  display: inline-block;
+  height: 75px;
+	width: 20px;
 }

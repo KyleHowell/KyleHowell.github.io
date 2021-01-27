@@ -3,8 +3,8 @@
 <head>
 <title>Using fixed, absolute, and relative positioning in CSS</title>	<!-- ADD TITLE HERE -->
 <link href='http://fonts.googleapis.com/css?family=Roboto:500|Open+Sans+Condensed:300|Roboto+Condensed|Audiowide|Open+Sans' rel='stylesheet' type='text/css'>
-<link REL="STYLESHEET" TYPE="text/css" HREF="reset.css"> 
-<link REL="STYLESHEET" TYPE="text/css" HREF="stylesheet.css"> 
+<link REL="STYLESHEET" TYPE="text/css" HREF="../css/reset.css">
+<link REL="STYLESHEET" TYPE="text/css" HREF="../css/stylesheet.css">
 <style>
             body {
                 color: black;
@@ -41,7 +41,7 @@
                 margin-top: 30px;
                 background-color: rgba(202, 232, 210, 0.9);
             }
-            
+
             h3 {
                 color: #2a6296;
             }
@@ -53,14 +53,14 @@
                 margin: auto;
                 margin-top: 30px;
             }
-            
+
             #pair p {
                 padding: 0 0 30px;
             }
             #fixed{
                 margin-top: 150px;
             }
-            
+
             #fixedex {
                 color: red;
             }
@@ -78,7 +78,7 @@
                 left: 30px;
                 color: green;
             }
-            
+
             #absolute {
                 position: absolute;
                 left: 100px;
@@ -88,26 +88,68 @@
 </style>
 </head>
 
-
-<header>
-
-<div id="googleicon"><a href="https://plus.google.com/u/0/+kylehowellTime/about"><img src="http://imgur.com/bHb5JZH.png" onmouseover="this.src='http://i.imgur.com/4OBqXPj.png'" onmouseout="this.src='http://imgur.com/bHb5JZH.png'" /></a>
-<div id="paypalicon"><a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_send-money&nav=1&email=mrhowell0@gmail.com"><img src="http://i.imgur.com/uo8lF3O.png" onmouseover="this.src='http://i.imgur.com/oyR7O7B.png'" onmouseout="this.src='http://i.imgur.com/uo8lF3O.png'" /></a>
-<div id="emailicon"><a href="mailto:mrkylehowell@gmail.com?subject=Hello Kyle!"><img src="http://i.imgur.com/aZJHafC.png" onmouseover="this.src='http://i.imgur.com/h8ohUjZ.png'" onmouseout="this.src='http://i.imgur.com/aZJHafC.png'" /></a></div>
-
-<div id="githubicon"><a href="http://www.github.com"><img src="http://i.imgur.com/M80bkqv.png?2"></a></div>
-<div id="hostedby"><h4><A HREF="http://www.github.com">Hosted by Github</A></h4></div>
-
-<div id="title"><h1>CSS Positioning</h1></div> <!-- ADD TITLE HERE -->
-</header>
-
-
 <body>
-<div id="nav"><ul>
-<li><a href="http://kylehowell.github.io/blog-posts/Technical_index.html">Technical Blogs</a></li>
-<li><a href="http://kylehowell.github.io/">Home</a></li>
-<li><a href="http://kylehowell.github.io/blog-posts/Cultural_index.html">Cultural Blogs</a></li>
-</ul></div>
+<div class="header">
+  <div class="icon-wrapper">
+    <div class="icon">
+      <a href="https://plus.google.com/u/0/+kylehowellTime/about">
+        <img src="http://imgur.com/bHb5JZH.png"
+        onmouseover="this.src='http://i.imgur.com/4OBqXPj.png'"
+        onmouseout="this.src='http://imgur.com/bHb5JZH.png'" />
+      </a>
+    </div>
+    <div class="icon">
+      <a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_send-money&nav=1&email=mrhowell0@gmail.com">
+        <img src="http://i.imgur.com/uo8lF3O.png"
+          onmouseover="this.src='http://i.imgur.com/oyR7O7B.png'"
+          onmouseout="this.src='http://i.imgur.com/uo8lF3O.png'" />
+      </a>
+    </div>
+    <div class="icon">
+      <a href="mailto:mrkylehowell@gmail.com?subject=Hello Kyle!">
+        <img src="http://i.imgur.com/aZJHafC.png"
+        onmouseover="this.src='http://i.imgur.com/h8ohUjZ.png'"
+        onmouseout="this.src='http://i.imgur.com/aZJHafC.png'" />
+      </a>
+    </div>
+  </div>
+  <div class="github-wrapper">
+    <div class="icon">
+      <a href="http://www.github.com">
+        <img src="http://i.imgur.com/M80bkqv.png?2">
+      </a>
+    </div>
+    <div class="hostedby">
+      <h4>
+        <a href="http://www.github.com">Hosted by Github</a>
+      </h4>
+    </div>
+  </div>
+
+  <div class="title">
+    <h1>Css Positioning</h1>
+  </div>
+</div>
+
+<div class="nav">
+  <ul>
+    <li>
+      <a href="http://kylehowell.github.io/blog-posts/Technical_index.html">
+        Technical Blogs
+      </a>
+    </li>
+    <li>
+      <a href="http://kylehowell.github.io/">
+        Home
+      </a>
+    </li>
+    <li>
+      <a href="http://kylehowell.github.io/blog-posts/Cultural_index.html">
+        Personal Blogs
+      </a>
+    </li>
+  </ul>
+</div>
 
 <div class="wrapper"><!--  BLOG STARTS HERE -->
 
@@ -115,39 +157,36 @@
 
 
 
-    
+
 
 
             <h1>Introduction to Positioning!</h1>
-            <h2 id="fixed">Fixed Positioning</h2>
+            <h2 class="fixed">Fixed Positioning</h2>
             <p>An element with fixed position is positioned relative to the browser window. It will not move even if the window is scrolled. Fixed positioned elements are removed from the normal flow. The document and other elements behave like the fixed positioned element does not exist.</p>
             <p><strong>Example: </strong></p>
-            <p id="fixedex">Did you notice something following you when you scrolled down the page? That is an example of fixed positioning.</p>
-            <h2 id="first">Relative Positioning</h2>
+            <p class="fixedex">Did you notice something following you when you scrolled down the page? That is an example of fixed positioning.</p>
+            <h2 class="first">Relative Positioning</h2>
             <p>A relative positioned element is positioned relative to its normal position. The content of relatively positioned elements can be moved and overlap other elements, but the reserved space for the element is still preserved in the normal flow.</p>
             <p><strong>Example: </strong></p>
             <p>The red one is fixed; the blue one is positioned 30 pixels to the left; the green one is positioned 30 pixels to the right</p>
-            <p id="one">Example1</p>
-            <p id="two">Example2</p>
-            <p id="three">Example3</p>
+            <p class="one">Example1</p>
+            <p class="two">Example2</p>
+            <p class="three">Example3</p>
             <h2>Absolute Positioning</h2>
             <p>An absolute position element is positioned relative to the first parent element that has a position other than static. If no such element is found, the containing block is html. Absolutely positioned elements are removed from the normal flow. The document and other elements behave like the absolutely positioned element does not exist.</p>
             </br></br></br></br>
-            
-            <p id="absolute">This is an example of Absolute Positioning</p>
+
+            <p class="absolute">This is an example of Absolute Positioning</p>
             <p>This is positioned 100 pixels from the left and 1930 pixels from the top of the screen.</p>
             </br>
             <img src="http://www.seenbest-web-design.com/techclub/wp-content/uploads/2012/08/stand_out.jpg"/>
-        
-    </body>
-
 
 
 </body>
 
 <footer>
-<!-- 
-<div id="nav"><ul>
+<!--
+<div class="nav"><ul>
 <li><a href="http://kylehowell.github.io/blog-posts/Technical_index.html">Technical Blogs</a></li>
 <li><a href="http://kylehowell.github.io/">Home</a></li>
 <li><a href="http://kylehowell.github.io/blog-posts/Cultural_index.html">Cultural Blogs</a></li>
